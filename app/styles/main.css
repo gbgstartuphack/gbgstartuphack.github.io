@@ -1,0 +1,49 @@
+@import url("http://cdn-images.mailchimp.com/embedcode/classic-081711.css");
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-image: url(../images/back.jpg);
+    background-size: cover;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.row-fluid.desciption {
+    margin-top: 30px;
+}
+
+.white1 {
+    position: relative;
+}
+
+.container-fluid.bottom {
+    background: rgba(255,255,255,0.8);
+}
+
+#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
