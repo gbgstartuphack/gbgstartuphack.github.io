@@ -4,8 +4,7 @@ body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
-    background-image: url(../images/back.jpg);
-    background-size: cover;
+    background: white;
 }
 
 .hero-unit {
@@ -40,8 +39,21 @@ body {
     position: relative;
 }
 
+.start1 {
+
+    padding: 20px 0;
+}
+
+.header {
+    background-image: url(../images/back.jpg);
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .container-fluid.bottom {
-    background: rgba(255,255,255,0.8);
+
 }
 
 #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
