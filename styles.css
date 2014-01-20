@@ -114,3 +114,32 @@ img {
     font-size: 15px;
   }
 }
+
+/* styles to make modal iframe resize properly */
+
+#signup-form-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-dialog {
+  height: 80%;
+  padding: 0;
+}
+
+.modal-content {
+  height: 100%;
+  position: relative;
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.modal-body {
+  height: 100%;
+  padding-top: 55px;
+}
