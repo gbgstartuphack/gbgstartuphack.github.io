@@ -22,13 +22,14 @@
 <link href="styles.css" rel="stylesheet">
 
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Event">
 
 <header role="banner" class="header">
-  <h1>
+  <h1 itemprop="name">
     <em>Gothenburg</em> Startup Hack
   </h1>
-  <h2>May 3 2014 at TBA</h2>
+  <h2><span itemprop="startDate" content="2014-05-03T11:00">May 3 2014</span> at 
+  <span itemprop="location">TBA</span></h2>
 </header>
 
 <main class="container">
@@ -68,7 +69,8 @@
     </div>
   </div>
 
-  <div class="row story"><div class="col-sm-12 col-md-8 col-md-offset-2">
+  <div class="row story" itemprop="description">
+  <div class="col-sm-12 col-md-8 col-md-offset-2">
     <p><em>Gothenburg Startup Hack</em> is a day for developers, designers and innovators living in Gothenburg to meet and build things together.</p>
     <p>We want our city to be one of the most exciting startup hubs in Europe, we want to take part in igniting, growing and strengthening our community even more, as well as opening up the world of tech to more people.</p>
     <p>We hope that this hackathon can be a small step in that direction.</p>
