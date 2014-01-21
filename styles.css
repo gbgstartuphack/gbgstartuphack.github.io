@@ -1,6 +1,6 @@
 body {
   background: #fdfdfd;
-  font-family: "Open Sans" "Helvetica Neue" Helvetica Arial sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   padding-bottom: 40px;
 }
@@ -55,6 +55,40 @@ img {
   background-position: center;
   position: relative;
   text-align: center;
+}
+
+.header {
+  color: #fff;
+}
+
+.header h1,
+.header h2 {
+  position: relative;
+  z-index: 99;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: Pacifico, cursive;
+  font-size: 6.3em;
+}
+
+.header h1 em {
+  font-style: normal;
+  display: block;
+  font-family: Ubuntu, sans-serif;
+  font-size: .28em;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1em;
+  margin: 1em 0;
+}
+
+.header h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  margin-bottom: 1em;
 }
 
 /* overlay for darkening header */
