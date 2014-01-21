@@ -154,6 +154,12 @@ img {
   }
 }
 
+.btn {
+  font-size: 1.5em;
+  border-radius: 2px;
+  border: 0;
+}
+
 /* styles to make modal iframe resize properly */
 #signup-form-iframe {
   width: 100%;
@@ -175,6 +181,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .modal-body {
