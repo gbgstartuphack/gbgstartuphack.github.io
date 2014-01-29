@@ -1,0 +1,32 @@
+// Colors
+
+$accent:				#428bca;
+$gray:					#666666;
+$text-color: 			#333;
+
+$btn-color:				blue;
+$btn-color-dangerous:	red;
+$btn-color-accent:		green;
+
+$link-color: 			$accent;
+
+
+// Typography
+
+$sans:					"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: 				Georgia, serif;
+
+$base-size:				15;
+$leading:				22;
+
+$fontsize:				$base-size/16 * 1em;
+$lineheight:			($leading/$base-size) * 1em;
+
+// Grid
+
+$page-width:			768px;
+
+// Viewports
+
+$medium-screen: 		940px;
+$small-screen: 			560px;

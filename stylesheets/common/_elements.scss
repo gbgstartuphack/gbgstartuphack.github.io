@@ -1,0 +1,28 @@
+/*	=ELEMENT SETUP
+----------------------------------------------------------------------*/
+
+img,
+object,
+embed,
+iframe {
+	max-width: 100%;
+	height: auto;
+	
+	&.noscale {
+		max-width: none;
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+p {
+	margin: 0 0 $lineheight;
+}

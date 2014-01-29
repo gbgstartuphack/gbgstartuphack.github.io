@@ -1,0 +1,31 @@
+/*	=HEADINGS
+----------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-size: to_em(60);
+	font-family: Pacifico;
+	margin: $lineheight / 2 0;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: to_em(36);
+	margin: $lineheight / 2 0;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: to_em(16);
+	margin-bottom: $lineheight / 2;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: to_em(18);
+}

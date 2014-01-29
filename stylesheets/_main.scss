@@ -1,0 +1,34 @@
+/*	=MAIN SITE STYLES
+----------------------------------------------------------------------*/
+
+html {
+	background-color: #fdfdfd;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	-webkit-tap-highlight-color: #fff;
+	font: normal #{$fontsize}/#{($leading/$base-size)} $sans;
+	color: $text-color;
+}
+
+// ELEMENTS
+// Include stuff like headings, links, buttons, forms, element styling ..
+
+@import "common/*";
+
+
+// PARTIALS
+// Different areas of the site layout, ex. header, sidebars.
+
+@import "partials/*";
+
+// VIEWS
+// Different views, ex. home, profile page, etc.
+
+@import "views/*";
+
+// RESPONSIVE STYLES
+
+@import "viewports/medium";
+@import "viewports/small";
