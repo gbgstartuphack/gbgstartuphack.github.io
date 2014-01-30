@@ -431,6 +431,30 @@ img.mfp-img {
     padding-right: 6px;
   }
 }
+.mfp-container,
+.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-removing .mfp-container,
+.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 .mfp-ie7 .mfp-img {
   padding: 0;
 }

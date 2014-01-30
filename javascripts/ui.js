@@ -59,6 +59,9 @@ $(function() {
 	// set up gallery
 	$(".location-gallery a").magnificPopup({
 		type: "image",
+		zoom: {
+			enabled: true
+		},
 		gallery: {
 			enabled: true,
 			tCounter: ""
