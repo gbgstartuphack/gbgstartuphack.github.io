@@ -394,6 +394,10 @@ table {
   font-size: 3em;
 }
 
+.light-on-dark {
+  color: #fff;
+}
+
 .gallery img {
   display: block;
   opacity: .9;
@@ -1268,6 +1272,14 @@ h4 {
   text-align: left;
   margin: 0 0 0.5em;
 }
+.signup .signup-follow {
+  text-align: center;
+  font-size: .9em;
+  padding: 0 10%;
+}
+.signup .signup-follow a {
+  font-weight: bold;
+}
 
 .signup > div {
   background-position: left bottom;
@@ -1296,7 +1308,7 @@ h4 {
 }
 
 .the-organisers h2 {
-  font-size: 1.33333em;
+  font-size: 1.2em;
   margin-bottom: 0;
 }
 .the-organisers section p {
