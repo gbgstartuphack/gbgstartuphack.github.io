@@ -388,6 +388,39 @@ table {
   left: -9999em;
 }
 
+.gallery img {
+  display: block;
+  opacity: .9;
+}
+.gallery img:hover {
+  opacity: 1;
+}
+.gallery a {
+  display: inline-block;
+  max-width: 30%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 1px 3px;
+  -webkit-transition: border-color 0.3s ease-out;
+  -moz-transition: border-color 0.3s ease-out;
+  -o-transition: border-color 0.3s ease-out;
+  transition: border-color 0.3s ease-out;
+  margin-right: 10px;
+  margin-bottom: 3px;
+}
+.gallery a:last-child, .gallery a:nth-child(3n) {
+  margin-right: 0;
+}
+.gallery a:hover {
+  border-color: #fff;
+}
+
 .tab-switch {
   display: table;
   text-align: center;

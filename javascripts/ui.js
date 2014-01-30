@@ -56,4 +56,13 @@ $(function() {
 	// set up tabs
 	$(".tab-switch").tabs({panes: ".the-event > section"})
 
+	// set up gallery
+	$(".location-gallery a").magnificPopup({
+		type: "image",
+		gallery: {
+			enabled: true,
+			tCounter: ""
+		}
+	})
+
 })
