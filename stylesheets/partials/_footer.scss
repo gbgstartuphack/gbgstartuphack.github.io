@@ -43,7 +43,12 @@
 			position: relative;
 			top: .2em;
 			margin-right: .2em;
-			color: #ddd;
+			color: #555;
+			color: rgba(#fff, .3);
+		}
+
+		.icon-hashtag {
+			margin-right: -.1em;
 		}
 
 		a {
