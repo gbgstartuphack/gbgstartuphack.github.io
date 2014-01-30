@@ -45,6 +45,7 @@
 			margin-right: .2em;
 			color: #555;
 			color: rgba(#fff, .3);
+			@include transition(color .15s ease-out);
 		}
 
 		.icon-hashtag {
