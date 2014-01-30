@@ -51,9 +51,9 @@
 // Cross-browser CSS animation mixin.
 
 @mixin animation($animation, $duration: 1s, $count: 1, $delay: 0s, $easing: "ease-out") {
-	-webkit-animation: unquote($animation) $duration $delay $count unquote($easing) forwards;
-	-moz-animation: unquote($animation) $duration $delay $count unquote($easing) forwards;
-	animation: unquote($animation) $duration $delay $count unquote($easing) forwards;
+	-webkit-animation: unquote($animation) $duration $delay $count unquote($easing) backwards;
+	-moz-animation: unquote($animation) $duration $delay $count unquote($easing) backwards;
+	animation: unquote($animation) $duration $delay $count unquote($easing) backwards;
 }
 
 

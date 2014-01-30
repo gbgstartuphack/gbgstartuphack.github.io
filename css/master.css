@@ -650,6 +650,108 @@ h4 {
 ----------------------------------------------------------------------*/
 /*	=HEADER
 ----------------------------------------------------------------------*/
+@-webkit-keyframes backgroundFloat {
+  from {
+    background-position: center -12.5em;
+  }
+
+  to {
+    background-position: center -13em;
+  }
+}
+
+@-moz-keyframes backgroundFloat {
+  from {
+    background-position: center -12.5em;
+  }
+
+  to {
+    background-position: center -13em;
+  }
+}
+
+@keyframes backgroundFloat {
+  from {
+    background-position: center -12.5em;
+  }
+
+  to {
+    background-position: center -13em;
+  }
+}
+
+@-webkit-keyframes headerFloat {
+  from {
+    -webkit-transform: translate(0, 20px);
+    -moz-transform: translate(0, 20px);
+    -ms-transform: translate(0, 20px);
+    -o-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes headerFloat {
+  from {
+    -webkit-transform: translate(0, 20px);
+    -moz-transform: translate(0, 20px);
+    -ms-transform: translate(0, 20px);
+    -o-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerFloat {
+  from {
+    -webkit-transform: translate(0, 20px);
+    -moz-transform: translate(0, 20px);
+    -ms-transform: translate(0, 20px);
+    -o-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 [role="banner"] {
   padding: 2em 1em;
   background-image: url('../images/header.jpg?1390995456');
@@ -658,6 +760,9 @@ h4 {
   background-position: center -13em;
   position: relative;
   text-align: center;
+  -webkit-animation: backgroundFloat 1s 0s 1 ease-out backwards;
+  -moz-animation: backgroundFloat 1s 0s 1 ease-out backwards;
+  animation: backgroundFloat 1s 0s 1 ease-out backwards;
   color: #fff;
   /* overlay for darkening header */
 }
@@ -672,6 +777,9 @@ h4 {
   position: relative;
   z-index: 99;
   text-align: center;
+  -webkit-animation: headerFloat 1s 0.4s 1 ease-out backwards;
+  -moz-animation: headerFloat 1s 0.4s 1 ease-out backwards;
+  animation: headerFloat 1s 0.4s 1 ease-out backwards;
 }
 [role="banner"] h1 {
   font-family: Pacifico, cursive;
