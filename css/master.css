@@ -715,6 +715,11 @@ h4 {
   font-size: 2.4em;
   font-weight: 600;
 }
+@media only screen and (max-width: 20em) {
+  [role="contentinfo"] .contact-email {
+    font-size: 1.86667em;
+  }
+}
 [role="contentinfo"] .contact-email:hover {
   text-decoration: none;
   border-bottom: 2px solid #fff;
@@ -1360,6 +1365,10 @@ h4 {
     background-color: #fff;
     color: #000;
   }
+
+  [role="contentinfo"] {
+    font-size: .8em;
+  }
 }
 /*	=SMALL SCREEN STYLES
 ----------------------------------------------------------------------*/
@@ -1370,5 +1379,9 @@ h4 {
 
   h1 {
     font-size: 2.66667em;
+  }
+
+  [role="contentinfo"] {
+    font-size: .7em;
   }
 }
