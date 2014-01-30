@@ -79,4 +79,8 @@ $(function() {
 		}
 	})
 
+	// smoothscroll
+	$(".smooth").smoothScroll({
+		speed: 1000
+	})
 })

@@ -17,6 +17,12 @@
 	left: -9999em;
 }
 
+.read-more {
+	color: $text-color;
+	text-decoration: none !important;
+	font-size: 3em;
+}
+
 .gallery {
 	img {
 		display: block;

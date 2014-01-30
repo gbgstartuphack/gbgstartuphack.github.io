@@ -2,5 +2,59 @@
 ----------------------------------------------------------------------*/
 
 [role="contentinfo"] {
-	
+	background-color: #222;
+	color: #f1f1f1;
+	padding: $lineheight*2 10%;
+	text-align: center;
+
+	h2 {
+		font-weight: 300;
+	}
+
+	.contact-email {
+		font-size: to_em(36);
+		font-weight: 600;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom: 2px solid #fff;
+		}
+	}
+
+	a {
+		color: #f6f6f6;
+	}	
+
+	.list {
+		margin: $lineheight*2 0;
+		font-size: 1.4em;
+
+		li {
+			display: inline-block;
+			margin: 0 1em;
+		}
+
+		[class^="icon-"] {
+			font-size: 2em;
+			position: relative;
+			top: .2em;
+			margin-right: .2em;
+			color: #ddd;
+		}
+
+		a {
+			display: inline-block;
+			padding: .3em .5em;
+			font-weight: 600;
+			letter-spacing: 1px;
+
+			&:hover {
+				text-decoration: none;
+
+				[class^="icon-"] {
+					color: #fff;
+				}
+			}
+		}
+	}
 }

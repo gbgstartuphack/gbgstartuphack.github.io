@@ -6,6 +6,7 @@ http_path = "/"
 css_dir = "css"
 sass_dir = "stylesheets"
 images_dir = "images"
+fonts_dir = "fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = (environment == :production) ? :compressed : :expanded

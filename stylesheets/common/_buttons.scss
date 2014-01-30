@@ -28,6 +28,12 @@ input[type="submit"] {
 	&.block {
 		width: 100%;
 	}
+
+	[class^="icon-"] {
+		position: relative;
+		top: 2px;
+		margin-right: .3em;
+	}
 }
 
 .btn-white {

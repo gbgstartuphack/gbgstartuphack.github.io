@@ -43,7 +43,8 @@
 
 	h1,
 	h2,
-	.tagline {
+	.tagline,
+	.read-more-container {
 	  position: relative;
 	  z-index: 99;
 	  text-align: center;
@@ -107,5 +108,9 @@
 		@include respond($small-screen) {
 			width: 95%;
 		}
+	}
+
+	.read-more-container {
+		margin: $lineheight*2 0 0;
 	}
 }
