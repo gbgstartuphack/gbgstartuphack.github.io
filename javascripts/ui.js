@@ -51,10 +51,21 @@ $.fn.tabs = function(options) {
 	})
 }
 
+function setUpTabs() {
+	$(".tab-switch").tabs({panes: ".the-event > section"})
+}
+
 $(function() {
 
 	// set up tabs
-	$(".tab-switch").tabs({panes: ".the-event > section"})
+	if(window.matchMedia) {
+		if(window.matchMedia("(min-width: 50em").matches){
+			setUpTabs()
+		}
+	}
+	else {
+		setUpTabs()
+	}
 
 	// set up gallery
 	$(".location-gallery a").magnificPopup({

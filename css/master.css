@@ -420,6 +420,14 @@ table {
 .gallery a:hover {
   border-color: #fff;
 }
+@media only screen and (max-width: 50em) {
+  .gallery a {
+    border: 0 !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
 
 .tab-switch {
   display: table;
@@ -525,8 +533,8 @@ input[type="submit"] {
   -webkit-appearance: none;
   display: inline-block;
   text-align: center;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid #333333;
+  color: #333333;
   font-weight: bold;
   padding: .5em 1em;
   -webkit-border-radius: 4px;
@@ -540,7 +548,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
   text-decoration: none;
-  background-color: #000;
+  background-color: #333333;
   color: #fff;
 }
 .btn.large, .large.btn-white,
@@ -565,6 +573,18 @@ input[type="submit"].block {
   background-color: rgba(255, 255, 255, 0.9);
   border-color: rgba(255, 255, 255, 0.9);
   color: #000;
+}
+@media only screen and (max-width: 50em) {
+  .btn-white {
+    background-color: transparent;
+    color: #333333;
+    border-color: #333333;
+  }
+  .btn-white:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #fff;
+  }
 }
 
 /*	=ELEMENT SETUP
@@ -658,6 +678,11 @@ h4 {
   font-size: 6.3em;
   margin-top: 0;
 }
+@media only screen and (max-width: 30em) {
+  [role="banner"] h1 {
+    font-size: 3em;
+  }
+}
 [role="banner"] h1 em {
   font-style: normal;
   display: block;
@@ -672,6 +697,12 @@ h4 {
   font-size: 1.3em;
   letter-spacing: .1em;
   margin-bottom: 1em;
+}
+@media only screen and (max-width: 30em) {
+  [role="banner"] h2 {
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
 }
 [role="banner"] [itemprop="startDate"],
 [role="banner"] [itemprop="location"] {
@@ -696,14 +727,25 @@ h4 {
   margin: 0 auto 1.46667em;
   font-size: 1.2em;
 }
+@media only screen and (max-width: 30em) {
+  [role="banner"] .tagline {
+    width: 95%;
+  }
+}
 
 /* =SECTIONS */
-.during-the-day, .during-the-night, .the-location > div, .signup > div {
+.the-location > div, .signup > div {
   height: 40em;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+@media only screen and (max-width: 50em) {
+  .the-location > div, .signup > div, .the-location > div > div, .signup > div > div {
+    height: auto !important;
+    background-image: none !important;
+  }
 }
 
 .text-box {
@@ -716,6 +758,14 @@ h4 {
   font-size: 1.2em;
   font-weight: bold;
   margin: 0;
+}
+@media only screen and (max-width: 50em) {
+  .text-box {
+    color: #333333 !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+  }
 }
 
 /* text content with padding */
@@ -733,40 +783,74 @@ h4 {
 .intro p:last-child {
   margin-bottom: 0;
 }
-
-@-webkit-keyframes float {
-  from {
-    -webkit-transform: translate(100px, 0);
-  }
-
-  to {
-    -webkit-transform: translate(0, 0);
+@media only screen and (max-width: 30em) {
+  .intro {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.1em;
   }
 }
 
 .the-event {
   position: relative;
-  height: 50em;
-  overflow: hidden;
+  padding-top: 67%;
+  height: 0;
   /* tabs */
+}
+@media only screen and (max-width: 50em) {
+  .the-event {
+    height: auto;
+    padding-top: 0;
+  }
+  .the-event > section h1 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: left;
+    padding-left: 10%;
+  }
 }
 .the-event .text-box {
   position: absolute;
   z-index: 11;
 }
-.the-event h1,
-.the-event .tab-switch {
-  position: relative;
-  z-index: 10;
+@media only screen and (max-width: 50em) {
+  .the-event .text-box {
+    position: static !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    left: auto !important;
+    top: auto !important;
+    font-weight: normal !important;
+    -webkit-column-count: 1 !important;
+    text-align: left !important;
+    max-width: 35em !important;
+    font-size: 1.1em !important;
+    width: 80% !important;
+  }
+  .the-event .text-box p {
+    margin: 0 0 1.46667em !important;
+  }
 }
 .the-event h1 {
   padding-top: .5em;
   margin-top: 0;
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .the-event h1 {
+    font-size: 3.2em;
+  }
 }
 .the-event > section {
   position: absolute;
   top: 0;
   width: 100%;
+  height: 0;
+  padding-top: 100%;
 }
 .the-event > section .text-box {
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
@@ -782,12 +866,29 @@ h4 {
   -o-transform: translate(5%, 0);
   transform: translate(5%, 0);
 }
+@media only screen and (max-width: 50em) {
+  .the-event > section.out .text-box {
+    opacity: 1 !important;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
 .the-event > section#the-hack.out .text-box {
   -webkit-transform: translate(-5%, 0);
   -moz-transform: translate(-5%, 0);
   -ms-transform: translate(-5%, 0);
   -o-transform: translate(-5%, 0);
   transform: translate(-5%, 0);
+}
+@media only screen and (max-width: 50em) {
+  .the-event > section {
+    position: static;
+    height: auto;
+    padding-top: 0;
+  }
 }
 .the-event .tab-switch {
   position: absolute;
@@ -796,6 +897,11 @@ h4 {
   left: 50%;
   margin-left: -9em;
   top: 10.26667em;
+}
+@media only screen and (max-width: 50em) {
+  .the-event .tab-switch {
+    display: none;
+  }
 }
 .the-event img {
   position: absolute;
@@ -815,9 +921,20 @@ h4 {
   transform: translate(0, -5%);
   opacity: 0;
 }
+@media only screen and (max-width: 50em) {
+  .the-event img {
+    display: none;
+  }
+}
 .the-event .the-party-back {
   bottom: 0;
   top: auto;
+}
+@media only screen and (max-width: 1155px) {
+  .the-event .the-party-back {
+    bottom: auto;
+    top: 0;
+  }
 }
 .the-event .the-party-back.out {
   -webkit-transform: translate(0, 5%);
@@ -826,9 +943,20 @@ h4 {
   -o-transform: translate(0, 5%);
   transform: translate(0, 5%);
 }
+@media only screen and (max-width: 50em) {
+  .the-event h1,
+  .the-event .text-box {
+    position: static;
+  }
+}
 
 .during-the-day h1 {
   color: #fff;
+}
+@media only screen and (max-width: 50em) {
+  .during-the-day h1 {
+    color: #333333;
+  }
 }
 .during-the-day .text-box {
   color: #fff;
@@ -843,7 +971,7 @@ h4 {
 }
 
 .during-the-night .text-box {
-  width: 600px;
+  max-width: 600px;
   margin-left: -300px;
   left: 50%;
   top: 14.66667em;
@@ -851,17 +979,55 @@ h4 {
   font-weight: 600;
   font-size: 1.2em;
 }
+@media only screen and (max-width: 1155px) {
+  .during-the-night .text-box {
+    top: 13.2em;
+  }
+}
 
 .the-location > div {
   height: 50em;
   background-image: url('../images/sections/location.jpg?1390995710');
   background-position: left top;
 }
-.the-location > div .text-box {
+.the-location .text-box {
   width: 30%;
   color: #fff;
   right: 5%;
   top: 7.33333em;
+}
+@media only screen and (max-width: 1024px) {
+  .the-location .text-box {
+    position: relative;
+    right: auto;
+    top: 60%;
+    padding-left: 10%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .the-location h3, .the-location p {
+    float: left;
+    max-width: 25em;
+    width: 50%;
+    clear: left;
+    padding-right: 5%;
+  }
+  .the-location .location-gallery {
+    float: right;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .the-location .text-box {
+    padding: 0 10%;
+  }
+  .the-location h3, .the-location p,
+  .the-location .location-gallery {
+    float: none;
+    width: 100%;
+    padding: 0;
+    top: auto;
+  }
 }
 
 .the-sponsors {
@@ -886,6 +1052,16 @@ h4 {
   right: 10%;
   top: 6em;
 }
+@media only screen and (max-width: 50em) {
+  .signup > div .text-box {
+    width: 80%;
+    margin: 0 auto;
+    right: auto;
+  }
+  .signup > div .text-box h1 {
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 1450px) {
   .signup > div {
     background-position: left -26em;
@@ -899,6 +1075,34 @@ h4 {
 .the-organisers section p {
   font-size: .85em;
 }
+@media only screen and (max-width: 50em) {
+  .the-organisers section {
+    width: 100%;
+    float: none;
+    overflow: hidden;
+    margin-bottom: 4.4em;
+  }
+  .the-organisers section div, .the-organisers section h2, .the-organisers section h3 {
+    text-align: left;
+  }
+  .the-organisers section p {
+    font-size: 1em;
+  }
+  .the-organisers section img {
+    float: left;
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .the-organisers section img {
+    float: none;
+    width: 40%;
+    margin: 0 auto 1.46667em;
+  }
+  .the-organisers section h2, .the-organisers section h3 {
+    text-align: center;
+  }
+}
 .the-organisers img {
   max-width: 80%;
   display: block;
@@ -909,14 +1113,31 @@ h4 {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
+@media only screen and (max-width: 50em) {
+  .the-organisers img {
+    max-width: 200px;
+  }
+}
 
 /*	=MEDIUM SIZED SCREENS
 ----------------------------------------------------------------------*/
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 50em) {
   .column {
     float: none !important;
     width: 100% !important;
   }
+  .column.first {
+    margin-left: 0 !important;
+  }
 }
 /*	=SMALL SCREEN STYLES
 ----------------------------------------------------------------------*/
+@media only screen and (max-width: 30em) {
+  body {
+    font-size: .9em;
+  }
+
+  h1 {
+    font-size: 2.66667em;
+  }
+}

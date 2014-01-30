@@ -2,5 +2,13 @@
 ----------------------------------------------------------------------*/
 
 @media only screen and (max-width: $small-screen) {
+
+	body {
+		font-size: .9em;
+	}
 	
+	h1 {
+		font-size: to_em(40);
+	}
+
 }

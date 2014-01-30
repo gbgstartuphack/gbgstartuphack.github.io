@@ -6,6 +6,13 @@
 	background-position: center;
 	background-size: cover;
 	position: relative;
+
+	@include respond($medium-screen) {
+		&, & > div {
+			height: auto !important;
+			background-image: none !important;
+		}
+	}
 }
 
 .text-box {
@@ -18,6 +25,13 @@
 		font-size: 1.2em;
 		font-weight: bold;
 		margin: 0;
+	}
+
+	@include respond($medium-screen) {
+		color: $text-color !important;
+		position: static !important;
+		top: auto !important;
+		left: auto !important;
 	}
 }
 
@@ -37,36 +51,67 @@
   p:last-child {
   	margin-bottom: 0;
   }
+
+  @include respond($small-screen) {
+  	padding-left: 5%;
+  	padding-right: 5%;
+  	font-size: 1.1em;
+  }
 }
 
-@-webkit-keyframes float {
-	from {
-		-webkit-transform: translate(100px, 0);
-	}
-	to {
-		-webkit-transform: translate(0, 0);	
-	}
-}
 
 .the-event {
 	position: relative;
-	height: 50em;
-	overflow: hidden;
+	padding-top: 67%;
+	height: 0;
+
+	@include respond($medium-screen) { 
+		height: auto;
+		padding-top: 0;
+
+		& > section h1 {
+			font-family: $sans;
+			font-weight: bold;
+			font-size: to_em(24);
+			text-align: left;
+			padding-left: 10%;
+		}
+	}
 
 	.text-box {
 		position: absolute;
 		z-index: 11;
-	}
 
-	h1,
-	.tab-switch {
-		position: relative;
-		z-index: 10;
+		@include respond($medium-screen) {
+			position: static !important;
+			margin: 0 auto !important;
+			padding: 0 !important;
+			left: auto !important;
+			top: auto !important;
+			font-weight: normal !important;
+			-webkit-column-count: 1 !important;
+			text-align: left !important;
+			max-width: 35em !important;
+			font-size: 1.1em !important;
+			width: 80% !important;
+
+			p {
+				margin: 0 0 $lineheight !important;
+			}
+		}
 	}
 
 	h1 {
 		padding-top: .5em;
 		margin-top: 0;
+		position: absolute;
+		z-index: 11;
+		top: 0;
+		width: 100%;
+
+		@include respond(900px) {
+			font-size: to_em(48);
+		}
 	}
 
 	/* tabs */
@@ -74,6 +119,8 @@
 		position: absolute;
 		top: 0;
 		width: 100%;
+		height: 0;
+		padding-top: 100%;
 		
 		.text-box {
 			@include transition(transform .5s, opacity .5s);
@@ -82,10 +129,21 @@
 		&.out .text-box {
 			opacity: 0;
 			@include transform(translate(5%, 0));
+
+			@include respond($medium-screen) {
+				opacity: 1 !important;
+				@include transform(translate(0, 0));
+			}
 		}
 
 		&#the-hack.out .text-box {
 			@include transform(translate(-5%, 0));	
+		}
+
+		@include respond($medium-screen) {
+			position: static;
+			height: auto;
+			padding-top: 0;
 		}
 	}
 
@@ -97,6 +155,10 @@
 		left: 50%;
 		margin-left: -#{$width / 2};
 		top: $lineheight*7;
+
+		@include respond($medium-screen) {
+			display: none;
+		}
 	}
 
 	img {
@@ -110,23 +172,42 @@
 			@include transform(translate(0, -5%));
 			opacity: 0;
 		}
+
+		@include respond($medium-screen) {
+			display: none;
+		}
 	}
 
 	.the-party-back {
 		bottom: 0;
 		top: auto;
+
+		@include respond(1155px) {
+			bottom: auto;
+			top: 0;
+		}
 		
 		&.out {
 			@include transform(translate(0, 5%));
 		}
 	}
+
+	@include respond($medium-screen) {
+		h1,
+		.text-box {
+			position: static;
+		}
+	}
 }
 
 .during-the-day {
-	@extend %background-section;
 	
 	h1 {
 		color: #fff;
+
+		@include respond($medium-screen) {
+			color: $text-color;
+		}
 	}
   	.text-box {
   		color: #fff;
@@ -144,24 +225,32 @@
 }
 
 .during-the-night {
-	@extend %background-section;
 
 	.text-box {
-		width: 600px;
+		max-width: 600px;
 		margin-left: -300px;
 		left: 50%;
 		top: $lineheight*10;
 		text-align: center;
 		font-weight: 600;
 		font-size: 1.2em;
+
+		@include respond(1155px) {
+			top: $lineheight*9;
+		}
 	}	
+
+	
 }
 
-.the-location > div {
-	@extend %background-section;
-	height: 50em;
-	background-image: image-url("sections/location.jpg");
-	background-position: left top;
+.the-location {
+	
+	& > div {
+		@extend %background-section;
+		height: 50em;
+		background-image: image-url("sections/location.jpg");
+		background-position: left top;
+	}
 
 	.text-box {
 		width: 30%;
@@ -169,11 +258,46 @@
 		right: 5%;
 		top: $lineheight*5;
 	}
+
+	@include respond(1024px) {
+		.text-box {
+			position: relative;
+			right: auto;
+			top: 60%;
+			padding-left: 10%;
+			width: 100%;
+			overflow: hidden;
+		}
+
+		h3, p {
+			float: left;
+			max-width: 25em;
+			width: 50%;
+			clear: left;
+			padding-right: 5%;
+		}
+
+		.location-gallery {
+			float: right;
+			width: 50%;
+		}
+	}
+
+	@include respond($medium-screen) {
+		.text-box {
+			padding: 0 10%;
+		}
+
+		h3, p,
+		.location-gallery {
+			float: none;
+			width: 100%;
+			padding: 0;
+			top: auto;
+		}
+	}
 }
 
-.location-gallery {
-	
-}
 
 .the-sponsors {
 	text-align: center;
@@ -201,6 +325,16 @@
 		color: #fff;
 		right: 10%;
 		top: 6em;
+
+		@include respond($medium-screen) {
+			width: 80%;
+			margin: 0 auto;
+			right: auto;
+
+			h1 {
+				text-align: center;
+			}
+		}
 	}
 
 	@include respond(1450px, min) {
@@ -220,6 +354,38 @@
 		p {
 			font-size: .85em;
 		}
+
+		@include respond($medium-screen) {
+			width: 100%;
+			float: none;
+			overflow: hidden;
+			margin-bottom: $lineheight*3;
+
+			div, h2, h3 {
+				text-align: left;
+			}
+
+			p {
+				font-size: 1em;
+			}
+
+			img {
+				float: left;
+				margin-right: 10%;
+			}
+		}
+
+		@include respond($small-screen) {
+			img {
+				float: none;
+				width: 40%;
+				margin: 0 auto $lineheight;
+			}
+
+			h2, h3 {
+				text-align: center;
+			}
+		}
 	}
 
 	img {
@@ -227,6 +393,10 @@
 		display: block;
 		margin: 0 auto;
 		@include border-radius(100%);
+
+		@include respond($medium-screen) {
+			max-width: 200px;
+		}
 	}
 }
 

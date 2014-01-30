@@ -9,15 +9,15 @@ input[type="submit"] {
 	display: inline-block;
 	text-align: center;
 	
-	border: 2px solid #000;
-	color: #000;
+	border: 2px solid $text-color;
+	color: $text-color;
 	font-weight: bold;
 	padding: .5em 1em;
 	@include border-radius(4px);
 
 	&:hover {
 		text-decoration: none;
-		background-color: #000;
+		background-color: $text-color;
 		color: #fff;
 	}
 
@@ -40,5 +40,17 @@ input[type="submit"] {
 		background-color: rgba(#fff, .9);
 		border-color: rgba(#fff, .9);
 		color: #000;
+	}
+
+	@include respond($medium-screen) {
+		background-color: transparent;
+		color: $text-color;
+		border-color: $text-color;
+
+		&:hover {
+			background-color: $text-color;
+			border-color: $text-color;
+			color: #fff;
+		}
 	}
 }

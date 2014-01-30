@@ -45,6 +45,13 @@
 			border-color: #fff;
 		}
 	}
+
+	@include respond($medium-screen) {
+		a {
+			border: 0 !important;
+			@include box-shadow(none);
+		}
+	}
 }
 
 .tab-switch {
