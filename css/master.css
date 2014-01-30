@@ -1293,10 +1293,12 @@ h4 {
   font-weight: bold;
 }
 
-#signup-modal-toggle {
+#signup-modal-toggle,
+[href="#signup"] {
   overflow: hidden;
 }
-#signup-modal-toggle .icon-paperplane {
+#signup-modal-toggle .icon-paperplane,
+[href="#signup"] .icon-paperplane {
   -webkit-transition: -webkit-transform 0.5s;
   -webkit-transition-delay: 0.2s;
   -moz-transition: -moz-transform 0.5s 0.2s;
@@ -1304,7 +1306,8 @@ h4 {
   transition: transform 0.5s 0.2s;
   display: inline-block;
 }
-#signup-modal-toggle:hover .icon-paperplane {
+#signup-modal-toggle:hover .icon-paperplane,
+[href="#signup"]:hover .icon-paperplane {
   -webkit-transform: translate(30px, -40px);
   -moz-transform: translate(30px, -40px);
   -ms-transform: translate(30px, -40px);

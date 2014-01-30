@@ -333,7 +333,8 @@
 	}
 }
 
-#signup-modal-toggle {
+#signup-modal-toggle,
+[href="#signup"] {
 	overflow: hidden;
 
 	.icon-paperplane {
