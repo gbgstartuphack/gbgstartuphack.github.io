@@ -333,6 +333,19 @@
 	}
 }
 
+#signup-modal-toggle {
+	overflow: hidden;
+
+	.icon-paperplane {
+		@include transition(transform .5s .2s);
+		display: inline-block;
+	}
+
+	&:hover .icon-paperplane {
+		@include transform(translate(30px,-40px));
+	}
+}
+
 .signup > div {
 	@extend %background-section;
 	background-position: left bottom;

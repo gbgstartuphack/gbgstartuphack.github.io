@@ -1293,6 +1293,25 @@ h4 {
   font-weight: bold;
 }
 
+#signup-modal-toggle {
+  overflow: hidden;
+}
+#signup-modal-toggle .icon-paperplane {
+  -webkit-transition: -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition: -moz-transform 0.5s 0.2s;
+  -o-transition: -o-transform 0.5s 0.2s;
+  transition: transform 0.5s 0.2s;
+  display: inline-block;
+}
+#signup-modal-toggle:hover .icon-paperplane {
+  -webkit-transform: translate(30px, -40px);
+  -moz-transform: translate(30px, -40px);
+  -ms-transform: translate(30px, -40px);
+  -o-transform: translate(30px, -40px);
+  transform: translate(30px, -40px);
+}
+
 .signup > div {
   background-position: left bottom;
   background-image: url('../images/sections/signup.jpg?1390995498');
