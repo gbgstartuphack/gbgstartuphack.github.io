@@ -1351,6 +1351,15 @@ h4 {
   .column.first {
     margin-left: 0 !important;
   }
+
+  [role="banner"] .btn-white {
+    border-color: #fff;
+    color: #fff;
+  }
+  [role="banner"] .btn-white:hover {
+    background-color: #fff;
+    color: #000;
+  }
 }
 /*	=SMALL SCREEN STYLES
 ----------------------------------------------------------------------*/
