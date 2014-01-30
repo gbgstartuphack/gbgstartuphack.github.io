@@ -306,6 +306,14 @@
 		margin-left: 33%;
 	}
 
+	footer {
+		font-size: .85em;
+		font-weight: 600;
+		color: #888;
+		max-width: 30em;
+		width: 80%;
+		margin: $lineheight*2 auto 0;	
+	}
 }
 
 .signup {

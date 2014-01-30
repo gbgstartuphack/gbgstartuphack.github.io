@@ -1250,6 +1250,14 @@ h4 {
 .the-sponsors .first {
   margin-left: 33%;
 }
+.the-sponsors footer {
+  font-size: .85em;
+  font-weight: 600;
+  color: #888;
+  max-width: 30em;
+  width: 80%;
+  margin: 2.93333em auto 0;
+}
 
 .signup h1 {
   text-align: left;
