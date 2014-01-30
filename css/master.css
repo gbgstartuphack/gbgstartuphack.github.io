@@ -483,6 +483,57 @@ body {
   color: #333333;
 }
 
+/* =BUTTONS 
+-------------------------------- */
+.btn, .btn-white,
+button,
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #000;
+  color: #000;
+  font-weight: bold;
+  padding: .5em 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.btn:hover, .btn-white:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+}
+.btn.large, .large.btn-white,
+button.large,
+input[type="button"].large,
+input[type="submit"].large {
+  font-size: 1.2em;
+}
+.btn.block, .block.btn-white,
+button.block,
+input[type="button"].block,
+input[type="submit"].block {
+  width: 100%;
+}
+
+.btn-white {
+  border-color: #fff;
+  color: #000;
+  background-color: #fff;
+}
+.btn-white:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
 /*	=ELEMENT SETUP
 ----------------------------------------------------------------------*/
 img,
@@ -787,6 +838,11 @@ h4 {
   margin-left: 33%;
 }
 
+.signup h1 {
+  text-align: left;
+  margin: 0 0 0.5em;
+}
+
 .signup > div {
   background-position: left bottom;
   background-image: url('../images/sections/signup.jpg?1390995498');
@@ -795,7 +851,7 @@ h4 {
   width: 30%;
   color: #fff;
   right: 10%;
-  top: 10em;
+  top: 6em;
 }
 @media only screen and (min-width: 1450px) {
   .signup > div {

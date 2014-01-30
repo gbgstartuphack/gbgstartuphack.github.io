@@ -180,6 +180,13 @@
 
 }
 
+.signup {
+	h1 {
+		text-align: left;
+		margin: 0 0 0.5em;
+	}
+}
+
 .signup > div {
 	@extend %background-section;
 	background-position: left bottom;
@@ -189,7 +196,7 @@
 		width: 30%;
 		color: #fff;
 		right: 10%;
-		top: 10em;
+		top: 6em;
 	}
 
 	@include respond(1450px, min) {

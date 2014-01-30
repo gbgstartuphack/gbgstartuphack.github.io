@@ -1,0 +1,44 @@
+/* =BUTTONS 
+-------------------------------- */
+
+.btn,
+button,
+input[type="button"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	display: inline-block;
+	text-align: center;
+	
+	border: 2px solid #000;
+	color: #000;
+	font-weight: bold;
+	padding: .5em 1em;
+	@include border-radius(4px);
+
+	&:hover {
+		text-decoration: none;
+		background-color: #000;
+		color: #fff;
+	}
+
+	&.large {
+		font-size: 1.2em;
+	}
+
+	&.block {
+		width: 100%;
+	}
+}
+
+.btn-white {
+	@extend .btn;
+	border-color: #fff;
+	color: #000;
+	background-color: #fff;
+
+	&:hover {
+		background-color: rgba(#fff, .9);
+		border-color: rgba(#fff, .9);
+		color: #000;
+	}
+}
