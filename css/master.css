@@ -981,6 +981,9 @@ h4 {
     height: auto !important;
     background-image: none !important;
   }
+  .the-location > div .light-on-dark, .signup > div .light-on-dark {
+    color: #333333;
+  }
 }
 
 .text-box {
