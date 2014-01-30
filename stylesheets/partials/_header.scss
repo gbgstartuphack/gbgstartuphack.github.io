@@ -5,11 +5,14 @@
 	padding: 2em 1em;
 	background-image: image-url('header.jpg');
 	background-size: cover;
-	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: center -13em;
 	position: relative;
 	text-align: center;
+
+	@include respond(1024px) {
+		background-position: center bottom;
+	}
 
 	color: #fff;
 

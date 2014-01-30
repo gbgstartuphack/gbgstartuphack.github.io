@@ -39,36 +39,118 @@
   }
 }
 
+@-webkit-keyframes float {
+	from {
+		-webkit-transform: translate(100px, 0);
+	}
+	to {
+		-webkit-transform: translate(0, 0);	
+	}
+}
+
 .the-event {
+	position: relative;
+	height: 50em;
+	overflow: hidden;
+
+	.text-box {
+		position: absolute;
+		z-index: 11;
+	}
+
+	h1,
+	.tab-switch {
+		position: relative;
+		z-index: 10;
+	}
+
 	h1 {
 		padding-top: .5em;
 		margin-top: 0;
+	}
+
+	/* tabs */
+	& > section {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		
+		.text-box {
+			@include transition(transform .5s, opacity .5s);
+		}
+
+		&.out .text-box {
+			opacity: 0;
+			@include transform(translate(5%, 0));
+		}
+
+		&#the-hack.out .text-box {
+			@include transform(translate(-5%, 0));	
+		}
+	}
+
+	.tab-switch {
+		$width: 18em;
+		position: absolute;
+		z-index: 999;
+		width: $width;
+		left: 50%;
+		margin-left: -#{$width / 2};
+		top: $lineheight*7;
+	}
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		@include transition(opacity .5s, transform 1s);
+
+		&.out {
+			@include transform(translate(0, -5%));
+			opacity: 0;
+		}
+	}
+
+	.the-party-back {
+		bottom: 0;
+		top: auto;
+		
+		&.out {
+			@include transform(translate(0, 5%));
+		}
 	}
 }
 
 .during-the-day {
 	@extend %background-section;
-  	background-image: image-url("sections/during-the-day.jpg");
 	
 	h1 {
 		color: #fff;
 	}
   	.text-box {
   		color: #fff;
-  		width: 40%;
-  		left: 20%;
-  		top: 10em;
+  		width: 700px;
+  		left: 50%;
+  		margin-left: -350px;
+  		top: 15em;
+
+  		-webkit-column-count: 2;
+  	}
+
+  	p {
+  		margin: 0;
   	}
 }
 
 .during-the-night {
 	@extend %background-section;
-	background-image: image-url("sections/fest.jpg");
 
 	.text-box {
-		width: 50%;
-		margin: 0 auto;
-		position: static;
+		width: 600px;
+		margin-left: -300px;
+		left: 50%;
+		top: $lineheight*10;
 		text-align: center;
 		font-weight: 600;
 		font-size: 1.2em;

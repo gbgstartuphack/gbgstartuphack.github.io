@@ -41,31 +41,38 @@
     </section>
 
     <section class="the-event">
-      <h1 class="hidden">The Event</h1>
+      <h1 class="hidden">The Hack</h1>
 
-      <section class="during-the-day">
+      <ul class="list tab-switch">
+        <li><a class="current" href="#the-hack">The Hack</a></li>
+        <li><a href="#the-party">The Party</a></li>
+      </ul>
+
+      <section class="during-the-day" id="the-hack">
         <h1>During the Day</h1>
 
-        <div>
-          <div class="text-box">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, error, a cupiditate laborum iste aspernatur eligendi quas sunt quae aliquid illum tempora voluptate libero? Tempora, incidunt dolor quo quis expedita.
-            </p>
-          </div>
+        <div class="text-box">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, error, a cupiditate laborum iste aspernatur eligendi quas sunt quae aliquid illum tempora voluptate libero? Tempora, incidunt dolor quo quis expedita.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, reprehenderit, deleniti sit hic cumque voluptas minima provident asperiores sint voluptates velit repellendus vero dolorum consequuntur laboriosam esse fugit a atque.
+          </p>
         </div>
 
       </section>
 
-      <section class="during-the-night">
+      <section class="during-the-night" id="the-party">
         <h1>During the Night</h1>
-        <div>
-          <div class="text-box">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veniam, soluta, delectus, esse voluptates distinctio id asperiores at neque harum magni consequatur recusandae dolorem est odit eligendi aliquid quae animi.
-            </p>
-          </div>
+        <div class="text-box">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veniam, soluta, delectus, esse voluptates distinctio id asperiores at neque harum magni consequatur recusandae dolorem est odit eligendi aliquid quae animi.
+          </p>
         </div>
       </section>
+
+      <img src="images/sections/during-the-day.jpg" data-id="the-hack" class="the-hack-back" alt="The Hack" />
+      <img src="images/sections/fest.jpg" data-id="the-party" class="the-party-back" alt="The Party" />
     </section>
   
     <section class="the-location">
@@ -185,5 +192,6 @@
 
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="javascripts/ui.js"></script>
 </body>
 </html>

@@ -388,6 +388,57 @@ table {
   left: -9999em;
 }
 
+.tab-switch {
+  display: table;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+}
+.tab-switch.dark {
+  border-color: #000;
+}
+.tab-switch.dark a {
+  color: #000;
+}
+.tab-switch.dark a.current {
+  color: #fff;
+  background-color: #000;
+}
+.tab-switch.dark a:not(.current):hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+.tab-switch.dark li:first-child a {
+  border-right-color: #000;
+}
+.tab-switch a {
+  color: #fff;
+  display: block;
+  padding: .5em 1em;
+  text-decoration: none !important;
+}
+.tab-switch a.current {
+  background-color: #fff;
+  color: #000;
+}
+.tab-switch a:not(.current):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.tab-switch li {
+  display: table-cell;
+}
+.tab-switch li:first-child a {
+  border-right: 1px solid #fff;
+}
+
 /* GRID */
 .column {
   float: left;
@@ -411,6 +462,12 @@ table {
 
 .fifth {
   width: 20%;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*	=MAIN SITE STYLES
@@ -493,13 +550,17 @@ h4 {
   padding: 2em 1em;
   background-image: url('../images/header.jpg?1390995456');
   background-size: cover;
-  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center -13em;
   position: relative;
   text-align: center;
   color: #fff;
   /* overlay for darkening header */
+}
+@media only screen and (max-width: 1024px) {
+  [role="banner"] {
+    background-position: center bottom;
+  }
 }
 [role="banner"] h1,
 [role="banner"] h2,
@@ -589,31 +650,119 @@ h4 {
   margin-bottom: 0;
 }
 
+@-webkit-keyframes float {
+  from {
+    -webkit-transform: translate(100px, 0);
+  }
+
+  to {
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+.the-event {
+  position: relative;
+  height: 50em;
+  overflow: hidden;
+  /* tabs */
+}
+.the-event .text-box {
+  position: absolute;
+  z-index: 11;
+}
+.the-event h1,
+.the-event .tab-switch {
+  position: relative;
+  z-index: 10;
+}
 .the-event h1 {
   padding-top: .5em;
   margin-top: 0;
 }
-
-.during-the-day {
-  background-image: url('../images/sections/during-the-day.jpg?1390995534');
+.the-event > section {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
+.the-event > section .text-box {
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+  -o-transition: -o-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.the-event > section.out .text-box {
+  opacity: 0;
+  -webkit-transform: translate(5%, 0);
+  -moz-transform: translate(5%, 0);
+  -ms-transform: translate(5%, 0);
+  -o-transform: translate(5%, 0);
+  transform: translate(5%, 0);
+}
+.the-event > section#the-hack.out .text-box {
+  -webkit-transform: translate(-5%, 0);
+  -moz-transform: translate(-5%, 0);
+  -ms-transform: translate(-5%, 0);
+  -o-transform: translate(-5%, 0);
+  transform: translate(-5%, 0);
+}
+.the-event .tab-switch {
+  position: absolute;
+  z-index: 999;
+  width: 18em;
+  left: 50%;
+  margin-left: -9em;
+  top: 10.26667em;
+}
+.the-event img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+  -moz-transition: opacity 0.5s, -moz-transform 1s;
+  -o-transition: opacity 0.5s, -o-transform 1s;
+  transition: opacity 0.5s, transform 1s;
+}
+.the-event img.out {
+  -webkit-transform: translate(0, -5%);
+  -moz-transform: translate(0, -5%);
+  -ms-transform: translate(0, -5%);
+  -o-transform: translate(0, -5%);
+  transform: translate(0, -5%);
+  opacity: 0;
+}
+.the-event .the-party-back {
+  bottom: 0;
+  top: auto;
+}
+.the-event .the-party-back.out {
+  -webkit-transform: translate(0, 5%);
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -o-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+}
+
 .during-the-day h1 {
   color: #fff;
 }
 .during-the-day .text-box {
   color: #fff;
-  width: 40%;
-  left: 20%;
-  top: 10em;
+  width: 700px;
+  left: 50%;
+  margin-left: -350px;
+  top: 15em;
+  -webkit-column-count: 2;
+}
+.during-the-day p {
+  margin: 0;
 }
 
-.during-the-night {
-  background-image: url('../images/sections/fest.jpg?1390995564');
-}
 .during-the-night .text-box {
-  width: 50%;
-  margin: 0 auto;
-  position: static;
+  width: 600px;
+  margin-left: -300px;
+  left: 50%;
+  top: 14.66667em;
   text-align: center;
   font-weight: 600;
   font-size: 1.2em;
@@ -674,5 +823,11 @@ h4 {
 
 /*	=MEDIUM SIZED SCREENS
 ----------------------------------------------------------------------*/
+@media only screen and (max-width: 40em) {
+  .column {
+    float: none !important;
+    width: 100% !important;
+  }
+}
 /*	=SMALL SCREEN STYLES
 ----------------------------------------------------------------------*/
