@@ -892,6 +892,9 @@ h4 {
 @media only screen and (max-width: 1024px) {
   [role="banner"] {
     background-position: center bottom;
+    -webkit-animation: none 1s 0s 1 ease-out backwards;
+    -moz-animation: none 1s 0s 1 ease-out backwards;
+    animation: none 1s 0s 1 ease-out backwards;
   }
 }
 [role="banner"] h1,

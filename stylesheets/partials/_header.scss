@@ -37,6 +37,7 @@
 
 	@include respond(1024px) {
 		background-position: center bottom;
+		@include animation("none");
 	}
 
 	color: #fff;
