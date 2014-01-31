@@ -775,31 +775,31 @@ h4 {
 ----------------------------------------------------------------------*/
 @-webkit-keyframes backgroundFloat {
   from {
-    background-position: center -12.5em;
+    background-position: center -7.5em;
   }
 
   to {
-    background-position: center -13em;
+    background-position: center -8em;
   }
 }
 
 @-moz-keyframes backgroundFloat {
   from {
-    background-position: center -12.5em;
+    background-position: center -7.5em;
   }
 
   to {
-    background-position: center -13em;
+    background-position: center -8em;
   }
 }
 
 @keyframes backgroundFloat {
   from {
-    background-position: center -12.5em;
+    background-position: center -7.5em;
   }
 
   to {
-    background-position: center -13em;
+    background-position: center -8em;
   }
 }
 
@@ -877,10 +877,10 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1390995456');
+  background-image: url('../images/header.jpg?1391079029');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -13em;
+  background-position: center -8em;
   position: relative;
   text-align: center;
   -webkit-animation: backgroundFloat 1s 0s 1 ease-out backwards;
@@ -1225,7 +1225,7 @@ h4 {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/sections/location.jpg?1390995710');
+  background-image: url('../images/sections/location.jpg?1391079029');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1320,7 +1320,7 @@ h4 {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/sections/signup.jpg?1390995498');
+  background-image: url('../images/sections/signup.jpg?1391079029');
 }
 .signup > div .text-box {
   width: 30%;

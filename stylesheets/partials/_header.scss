@@ -3,10 +3,10 @@
 
 @include keyframes("backgroundFloat") {
 	from {
-		background-position: center -12.5em;
+		background-position: center -7.5em;
 	}
 	to {
-		background-position: center -13em;		
+		background-position: center -8em;		
 	}
 }
 
@@ -30,7 +30,7 @@
 	background-image: image-url('header.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center -13em;
+	background-position: center -8em;
 	position: relative;
 	text-align: center;
 	@include animation("backgroundFloat", $duration: 1s);
