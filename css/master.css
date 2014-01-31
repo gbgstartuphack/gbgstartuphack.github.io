@@ -877,7 +877,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1391079029');
+  background-image: url('../images/header.jpg?1390995456');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -1228,7 +1228,7 @@ h4 {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/sections/location.jpg?1391079029');
+  background-image: url('../images/sections/location.jpg?1390995710');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1293,7 +1293,8 @@ h4 {
 .signup .signup-follow {
   text-align: center;
   font-size: .9em;
-  padding: 0 10%;
+  max-width: 20em;
+  margin: 0 auto;
 }
 .signup .signup-follow a {
   font-weight: bold;
@@ -1323,10 +1324,11 @@ h4 {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/sections/signup.jpg?1391079029');
+  background-image: url('../images/sections/signup.jpg?1390995498');
 }
 .signup > div .text-box {
-  width: 30%;
+  width: 35%;
+  max-width: 30em;
   color: #fff;
   right: 10%;
   top: 6em;
