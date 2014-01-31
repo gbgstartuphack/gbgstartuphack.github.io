@@ -634,6 +634,7 @@ iframe.noscale {
 a {
   color: #428bca;
   text-decoration: none;
+  font-weight: 600;
 }
 a:hover {
   text-decoration: underline;
@@ -671,7 +672,7 @@ h3 {
 
 h4 {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* =ICONS
@@ -706,6 +707,10 @@ h4 {
 
 .icon-hashtag:before {
   content: "\e604";
+}
+
+.icon-location:before {
+  content: "\e605";
 }
 
 /*	=FOOTER
@@ -996,9 +1001,11 @@ h4 {
 }
 .text-box h2, .text-box h3, .text-box h4 {
   text-align: left;
-  font-size: 1.2em;
   font-weight: bold;
   margin: 0;
+}
+.text-box h2, .text-box h3 {
+  font-size: 1.2em;
 }
 @media only screen and (max-width: 50em) {
   .text-box {
@@ -1238,6 +1245,10 @@ h4 {
   top: 7.33333em;
 }
 @media only screen and (max-width: 1024px) {
+  .the-location {
+    /* use absolute positioning since the bloody gallery
+    REFUSES to align at the top when floated right. */
+  }
   .the-location .text-box {
     position: relative;
     right: auto;
@@ -1246,7 +1257,7 @@ h4 {
     width: 100%;
     overflow: hidden;
   }
-  .the-location h3, .the-location p {
+  .the-location h3, .the-location .text-box > p, .the-location .location-address {
     float: left;
     max-width: 25em;
     width: 50%;
@@ -1254,21 +1265,29 @@ h4 {
     padding-right: 5%;
   }
   .the-location .location-gallery {
-    float: right;
-    width: 50%;
+    position: absolute;
+    top: 1.46667em;
+    right: 3%;
+    width: 45%;
   }
 }
 @media only screen and (max-width: 50em) {
   .the-location .text-box {
     padding: 0 10%;
   }
-  .the-location h3, .the-location p,
+  .the-location h3, .the-location .text-box > p,
+  .the-location .location-address,
   .the-location .location-gallery {
     float: none;
     width: 100%;
+    max-width: none;
     padding: 0;
     top: auto;
+    position: static;
   }
+}
+.the-location h4 {
+  margin-bottom: 0;
 }
 
 .the-sponsors {

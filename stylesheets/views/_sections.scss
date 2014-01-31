@@ -26,9 +26,12 @@
 
 	h2, h3, h4 {
 		text-align: left;
-		font-size: 1.2em;
 		font-weight: bold;
 		margin: 0;
+	}
+
+	h2, h3 {
+		font-size: 1.2em;
 	}
 
 	@include respond($medium-screen) {
@@ -273,7 +276,7 @@
 			overflow: hidden;
 		}
 
-		h3, p {
+		h3, .text-box > p, .location-address {
 			float: left;
 			max-width: 25em;
 			width: 50%;
@@ -281,9 +284,13 @@
 			padding-right: 5%;
 		}
 
+		/* use absolute positioning since the bloody gallery
+		REFUSES to align at the top when floated right. */
 		.location-gallery {
-			float: right;
-			width: 50%;
+			position: absolute;
+			top: $lineheight;
+			right: 3%;
+			width: 45%;
 		}
 	}
 
@@ -292,13 +299,20 @@
 			padding: 0 10%;
 		}
 
-		h3, p,
+		h3, .text-box > p,
+		.location-address,
 		.location-gallery {
 			float: none;
 			width: 100%;
+			max-width: none;
 			padding: 0;
 			top: auto;
+			position: static;
 		}
+	}
+
+	h4 {
+		margin-bottom: 0;
 	}
 }
 
