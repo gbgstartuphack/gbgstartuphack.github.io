@@ -1389,6 +1389,16 @@ h4 {
   }
 }
 
+.the-organisers .group, .the-advisors .group {
+  margin-bottom: 4.4em;
+}
+.the-organisers .group:first-child, .the-advisors .group:first-child {
+  margin-bottom: 0;
+}
+.the-organisers .organiser-follow, .the-advisors .organiser-follow {
+  text-align: center;
+  margin-bottom: 0;
+}
 .the-organisers h2, .the-advisors h2 {
   font-size: 1.2em;
   margin-bottom: 0;

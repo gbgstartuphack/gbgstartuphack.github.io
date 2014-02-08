@@ -398,6 +398,19 @@
 
 .the-organisers, .the-advisors {
 
+  .group {
+    margin-bottom: $lineheight * 3;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .organiser-follow {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
 	h2 {
 		font-size: to_em(18);
 		margin-bottom: 0;
