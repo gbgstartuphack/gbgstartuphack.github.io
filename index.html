@@ -149,7 +149,7 @@
             <p>Seize this opportunity to team up with other talented, driven people and come create with Gothenburg's most promising companies.</p>
 
           <p>
-            <a href="https://docs.google.com/forms/d/1YNl-agqel1g8cCTA7m_mMTVGMGKN9SzqRiyomstjGbQ/viewform?embedded=true" id="signup-modal-toggle" class="btn-white large block popup-iframe><i class="icon-paperplane"></i> Sign your team up</a>
+            <a href="https://docs.google.com/forms/d/1YNl-agqel1g8cCTA7m_mMTVGMGKN9SzqRiyomstjGbQ/viewform?embedded=true" id="signup-modal-toggle" class="btn-white large block" data-toggle="modal" data-target="#signup-modal"><i class="icon-paperplane"></i> Sign your team up</a>
           </p>
           <p class="signup-follow">
             We're also on <a class="light-on-dark" href="http://twitter.com/gbgstartuphack" title="@gbgstartuphack">Twitter</a> and <a class="light-on-dark" href="http://facebook.com/gbgstartuphack">Facebook</a>, available for any questions!
@@ -272,40 +272,8 @@
     </ul>
   </footer>
 
-
-
-  <form id="signup-form" class="white-popup-block mfp-hide white-popup" _lpchecked="1">
-      <h1>Form</h1>
-      <fieldset style="border:0;">
-          <p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use <code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if the user accidentally refreshed the page).</p>
-          <ol>
-              <li>
-                  <label for="name">Name</label>
-                  <input id="name" name="name" type="text" placeholder="Name" required="">
-              </li>
-              <li>
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
-              </li>
-              <li>
-                  <label for="phone">Phone</label>
-                  <input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
-              </li>
-              <li>
-                  <label for="textarea">Textarea</label><br>
-                  <textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
-              </li>
-          </ol>
-      </fieldset>
-  </form>
-
-  <!-- Button trigger modal -->
-  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-  </button>
-
   <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header">
