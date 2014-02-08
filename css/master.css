@@ -1171,6 +1171,7 @@ h4 {
   }
 }
 .the-event img {
+  min-width: 100%;
   position: absolute;
   left: 0;
   top: 0;
