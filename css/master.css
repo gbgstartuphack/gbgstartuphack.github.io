@@ -515,6 +515,15 @@ table {
   width: 20%;
 }
 
+.offset-fifth {
+  margin-left: 20%;
+}
+@media only screen and (max-width: 50em) {
+  .offset-fifth {
+    margin-left: 0;
+  }
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -1379,42 +1388,42 @@ h4 {
   }
 }
 
-.the-organisers h2 {
+.the-organisers h2, .the-advisors h2 {
   font-size: 1.2em;
   margin-bottom: 0;
 }
-.the-organisers section p {
+.the-organisers section p, .the-advisors section p {
   font-size: .85em;
 }
 @media only screen and (max-width: 50em) {
-  .the-organisers section {
+  .the-organisers section, .the-advisors section {
     width: 100%;
     float: none;
     overflow: hidden;
     margin-bottom: 4.4em;
   }
-  .the-organisers section div, .the-organisers section h2, .the-organisers section h3 {
+  .the-organisers section div, .the-organisers section h2, .the-organisers section h3, .the-advisors section div, .the-advisors section h2, .the-advisors section h3 {
     text-align: left;
   }
-  .the-organisers section p {
+  .the-organisers section p, .the-advisors section p {
     font-size: 1em;
   }
-  .the-organisers section img {
+  .the-organisers section img, .the-advisors section img {
     float: left;
     margin-right: 10%;
   }
 }
 @media only screen and (max-width: 30em) {
-  .the-organisers section img {
+  .the-organisers section img, .the-advisors section img {
     float: none;
     width: 40%;
     margin: 0 auto 1.46667em;
   }
-  .the-organisers section h2, .the-organisers section h3 {
+  .the-organisers section h2, .the-organisers section h3, .the-advisors section h2, .the-advisors section h3 {
     text-align: center;
   }
 }
-.the-organisers img {
+.the-organisers img, .the-advisors img {
   max-width: 80%;
   display: block;
   margin: 0 auto;
@@ -1425,9 +1434,18 @@ h4 {
   border-radius: 100%;
 }
 @media only screen and (max-width: 50em) {
-  .the-organisers img {
+  .the-organisers img, .the-advisors img {
     max-width: 200px;
   }
+}
+
+.the-advisors {
+  /*img {*/
+  /*max-width: 100px;*/
+  /*border-radius: 50%;*/
+  /*display: block;*/
+  /*margin: auto;*/
+  /*}*/
 }
 
 /*	=MEDIUM SIZED SCREENS
