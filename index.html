@@ -8,6 +8,7 @@
     <link type="text/css" href="css/master.css" rel="stylesheet" />
     <link type="text/css" href="css/magnific-popup.css" rel="stylesheet" />
     <link href="http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:700,300,400,600" rel="stylesheet" />
+      <link rel="stylesheet" href="http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.css" type="text/css" media="screen" />
 
     <meta content="A day for developers, designers and innovators living in Gothenburg to meet and build things together." name="description">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -146,7 +147,7 @@
           </p>
 
           <p>
-            <a href="#" id="signup-modal-toggle" class="btn-white large block"><i class="icon-paperplane"></i> Sign your team up</a>
+            <a href="https://docs.google.com/forms/d/1YNl-agqel1g8cCTA7m_mMTVGMGKN9SzqRiyomstjGbQ/viewform?embedded=true" id="signup-modal-toggle" class="btn-white large block popup-iframe><i class="icon-paperplane"></i> Sign your team up</a>
           </p>
           <p class="signup-follow">
             We're also on <a class="light-on-dark" href="http://twitter.com/gbgstartuphack" title="@gbgstartuphack">Twitter</a> and <a class="light-on-dark" href="http://facebook.com/gbgstartuphack">Facebook</a>, available for any questions!
@@ -154,6 +155,7 @@
         </div>
       </div>
     </section>
+
 
     <section class="the-organisers content">
       
@@ -271,6 +273,54 @@
 
 
 
+  <form id="signup-form" class="white-popup-block mfp-hide white-popup" _lpchecked="1">
+      <h1>Form</h1>
+      <fieldset style="border:0;">
+          <p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use <code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if the user accidentally refreshed the page).</p>
+          <ol>
+              <li>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Name" required="">
+              </li>
+              <li>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+              </li>
+              <li>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+              </li>
+              <li>
+                  <label for="textarea">Textarea</label><br>
+                  <textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
+              </li>
+          </ol>
+      </fieldset>
+  </form>
+
+  <!-- Button trigger modal -->
+  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                  <iframe src="https://docs.google.com/forms/d/1YNl-agqel1g8cCTA7m_mMTVGMGKN9SzqRiyomstjGbQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Läser in...</iframe>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+          </div>
+      </div>
+  </div>
 <!-- Modal 
 <div class="modal fade" id="signup-form-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -290,10 +340,12 @@
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
   <script src="javascripts/vendor/magnific-popup.js"></script>
   <script src="javascripts/vendor/jquery.smooth-scroll.min.js"></script>
   <script src="javascripts/ui.js"></script>
+
   <!-- By Per, Tomas, Anton, Oscar, and Johan -->
+
 </body>
 </html>
