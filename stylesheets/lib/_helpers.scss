@@ -147,6 +147,15 @@
 	width: 20%;
 }
 
+.offset-fifth {
+  margin-left: 20%;
+
+	@include respond($medium-screen) {
+    margin-left: 0;
+	}
+}
+
+
 
 .list {
 	list-style: none;

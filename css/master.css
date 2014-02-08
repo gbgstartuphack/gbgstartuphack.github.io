@@ -515,6 +515,15 @@ table {
   width: 20%;
 }
 
+.offset-fifth {
+  margin-left: 20%;
+}
+@media only screen and (max-width: 50em) {
+  .offset-fifth {
+    margin-left: 0;
+  }
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -882,7 +891,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1390995456');
+  background-image: url('../images/header.jpg?1391079029');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -974,6 +983,16 @@ h4 {
 }
 [role="banner"] .read-more-container {
   margin: 2.93333em 0 0;
+}
+
+#vault-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
 }
 
 /* =SECTIONS */
@@ -1152,6 +1171,7 @@ h4 {
   }
 }
 .the-event img {
+  min-width: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -1216,6 +1236,7 @@ h4 {
 }
 .during-the-day p {
   margin: 0;
+  text-indent: 1.5em;
 }
 
 .during-the-night .text-box {
@@ -1235,7 +1256,7 @@ h4 {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/sections/location.jpg?1390995710');
+  background-image: url('../images/sections/location.jpg?1391079029');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1343,7 +1364,7 @@ h4 {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/sections/signup.jpg?1390995498');
+  background-image: url('../images/sections/signup.jpg?1391079029');
 }
 .signup > div .text-box {
   width: 35%;
@@ -1368,42 +1389,42 @@ h4 {
   }
 }
 
-.the-organisers h2 {
+.the-organisers h2, .the-advisors h2 {
   font-size: 1.2em;
   margin-bottom: 0;
 }
-.the-organisers section p {
+.the-organisers section p, .the-advisors section p {
   font-size: .85em;
 }
 @media only screen and (max-width: 50em) {
-  .the-organisers section {
+  .the-organisers section, .the-advisors section {
     width: 100%;
     float: none;
     overflow: hidden;
     margin-bottom: 4.4em;
   }
-  .the-organisers section div, .the-organisers section h2, .the-organisers section h3 {
+  .the-organisers section div, .the-organisers section h2, .the-organisers section h3, .the-advisors section div, .the-advisors section h2, .the-advisors section h3 {
     text-align: left;
   }
-  .the-organisers section p {
+  .the-organisers section p, .the-advisors section p {
     font-size: 1em;
   }
-  .the-organisers section img {
+  .the-organisers section img, .the-advisors section img {
     float: left;
     margin-right: 10%;
   }
 }
 @media only screen and (max-width: 30em) {
-  .the-organisers section img {
+  .the-organisers section img, .the-advisors section img {
     float: none;
     width: 40%;
     margin: 0 auto 1.46667em;
   }
-  .the-organisers section h2, .the-organisers section h3 {
+  .the-organisers section h2, .the-organisers section h3, .the-advisors section h2, .the-advisors section h3 {
     text-align: center;
   }
 }
-.the-organisers img {
+.the-organisers img, .the-advisors img {
   max-width: 80%;
   display: block;
   margin: 0 auto;
@@ -1414,9 +1435,18 @@ h4 {
   border-radius: 100%;
 }
 @media only screen and (max-width: 50em) {
-  .the-organisers img {
+  .the-organisers img, .the-advisors img {
     max-width: 200px;
   }
+}
+
+.the-advisors {
+  /*img {*/
+  /*max-width: 100px;*/
+  /*border-radius: 50%;*/
+  /*display: block;*/
+  /*margin: auto;*/
+  /*}*/
 }
 
 /*	=MEDIUM SIZED SCREENS

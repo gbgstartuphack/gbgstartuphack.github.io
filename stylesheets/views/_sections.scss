@@ -169,6 +169,7 @@
 	}
 
 	img {
+    min-width: 100%;
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -228,6 +229,7 @@
 
   	p {
   		margin: 0;
+      text-indent: 1.5em;
   	}
 }
 
@@ -394,7 +396,7 @@
 	}
 }
 
-.the-organisers {
+.the-organisers, .the-advisors {
 
 	h2 {
 		font-size: to_em(18);
@@ -452,3 +454,12 @@
 	}
 }
 
+.the-advisors {
+
+  /*img {*/
+    /*max-width: 100px;*/
+    /*border-radius: 50%;*/
+    /*display: block;*/
+    /*margin: auto;*/
+  /*}*/
+}

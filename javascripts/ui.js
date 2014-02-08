@@ -85,4 +85,15 @@ $(function() {
 	})
 })
 
-
+/* 
+ * Vault button, epic as fuck
+ */
+$('#vault-button').click(function(e) {
+  if (!$(this).data('inABankVault')) {
+    $('p, h1, h2').append('<span class="in-a-bank-vault"> ...in a bank vault.</span>');
+    $(this).data('inABankVault', true);
+  } else {
+    $('.in-a-bank-vault').remove();
+    $(this).data('inABankVault', false);
+  }
+});
