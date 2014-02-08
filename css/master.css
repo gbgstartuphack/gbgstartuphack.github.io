@@ -882,7 +882,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1390995456');
+  background-image: url('../images/header.jpg?1391079029');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -974,6 +974,16 @@ h4 {
 }
 [role="banner"] .read-more-container {
   margin: 2.93333em 0 0;
+}
+
+#vault-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
 }
 
 /* =SECTIONS */
@@ -1216,6 +1226,7 @@ h4 {
 }
 .during-the-day p {
   margin: 0;
+  text-indent: 1.5em;
 }
 
 .during-the-night .text-box {
@@ -1235,7 +1246,7 @@ h4 {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/sections/location.jpg?1390995710');
+  background-image: url('../images/sections/location.jpg?1391079029');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1343,7 +1354,7 @@ h4 {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/sections/signup.jpg?1390995498');
+  background-image: url('../images/sections/signup.jpg?1391079029');
 }
 .signup > div .text-box {
   width: 35%;

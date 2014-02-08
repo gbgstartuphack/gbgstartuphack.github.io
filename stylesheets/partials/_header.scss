@@ -115,3 +115,13 @@
 		margin: $lineheight*2 0 0;
 	}
 }
+
+#vault-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
+}
