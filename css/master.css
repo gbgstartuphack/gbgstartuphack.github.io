@@ -722,6 +722,86 @@ h4 {
   content: "\e605";
 }
 
+/* =MODALS
+----------------------------- */
+.modal {
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  -webkit-transition: -webkit-transform, opacity 0.3s ease-out;
+  -moz-transition: -moz-transform, opacity 0.3s ease-out;
+  -o-transition: -o-transform, opacity 0.3s ease-out;
+  transition: transform, opacity 0.3s ease-out;
+}
+.modal.fade {
+  -webkit-transform: translate(0, -10px);
+  -moz-transform: translate(0, -10px);
+  -ms-transform: translate(0, -10px);
+  -o-transform: translate(0, -10px);
+  transform: translate(0, -10px);
+}
+.modal.fade.in {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.modal-dialog {
+  max-width: 600px;
+  width: 95%;
+  margin: 50px auto 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 30px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 10px 30px;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.fade.in {
+  opacity: 1;
+}
+
+.modal-backdrop.in {
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background: transparent -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, #000000));
+  background: transparent -webkit-radial-gradient(rgba(0, 0, 0, 0.1), #000000);
+  background: transparent -moz-radial-gradient(rgba(0, 0, 0, 0.1), #000000);
+  background: transparent -o-radial-gradient(rgba(0, 0, 0, 0.1), #000000);
+  background: transparent radial-gradient(rgba(0, 0, 0, 0.1), #000000);
+}
+
+#signup-modal .modal-body, #signup-modal iframe {
+  height: 500px;
+}
+#signup-modal iframe {
+  width: 100%;
+}
+
 /*	=FOOTER
 ----------------------------------------------------------------------*/
 [role="contentinfo"] {
@@ -891,7 +971,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1391878966');
+  background-image: url('../images/header.jpg?1390995456');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -1256,7 +1336,7 @@ h4 {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/sections/location.jpg?1391878966');
+  background-image: url('../images/sections/location.jpg?1390995710');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1364,7 +1444,7 @@ h4 {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/sections/signup.jpg?1391878966');
+  background-image: url('../images/sections/signup.jpg?1390995498');
 }
 .signup > div .text-box {
   width: 35%;
@@ -1500,87 +1580,4 @@ h4 {
   [role="contentinfo"] {
     font-size: .7em;
   }
-}
-.modal {
-  display: none;
-  overflow: auto;
-  overflow-y: scroll;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-}
-
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity .15s linear;
-  transition: opacity .15s linear;
-}
-
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform .3s ease-out;
-  -moz-transition: -moz-transform .3s ease-out;
-  -o-transition: -o-transform .3s ease-out;
-  transition: transform .3s ease-out;
-}
-
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform .3s ease-out;
-  -moz-transition: -moz-transform .3s ease-out;
-  -o-transition: -o-transform .3s ease-out;
-  transition: transform .3s ease-out;
-}
-
-@media (min-width: 768px) {
-  .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
-  }
-}
-.modal-body {
-  position: relative;
-  padding: 20px;
-}
-
-.fade.in {
-  opacity: 1;
-}
-
-.modal-backdrop.in {
-  opacity: .5;
-  filter: alpha(opacity=50);
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000;
-}
-
-#signup-modal {
-  margin-top: 10%;
-}
-
-#signup-modal iframe {
-  height: 768px;
 }

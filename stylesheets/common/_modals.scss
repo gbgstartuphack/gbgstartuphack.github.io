@@ -1,0 +1,66 @@
+/* =MODALS
+----------------------------- */
+
+.modal {
+	display: none;
+	overflow: auto;
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+	@include transition(transform, opacity .3s ease-out);
+
+	&.fade {
+		@include transform(translate(0, -10px));
+
+		&.in {
+			@include transform(translate(0, 0));
+		}
+	}
+}
+
+.modal-dialog {
+	max-width: 600px;
+	width: 95%;
+	margin: 50px auto 0;
+	@include box-shadow(rgba(#000, .3) 0 10px 30px);
+}
+
+.fade {
+  opacity: 0;
+  @include transition(opacity .3s);
+
+  &.in {
+  	opacity: 1;
+  }
+}
+
+.modal-backdrop.in {
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  @include background(transparent radial-gradient(rgba(#000, .1), #000));
+}
+
+#signup-modal {
+	.modal-body, iframe {
+		height: 500px;
+	}
+
+	iframe {
+		width: 100%;
+	}
+}
