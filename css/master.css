@@ -3,8 +3,8 @@
 	
 	A foundation to build upon.
 ----------------------------------------------------------------------*/
-/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
-/*! Modified by Johan, 2012 */
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* Modified by Johan, 2012 */
 /* Border-box everything! It's okay! */
 * {
   -moz-box-sizing: border-box;
@@ -795,6 +795,9 @@ h4 {
   background: transparent radial-gradient(rgba(0, 0, 0, 0.1), #000000);
 }
 
+#signup-modal {
+  overflow-y: auto;
+}
 #signup-modal .modal-body, #signup-modal iframe {
   height: 500px;
 }
@@ -971,7 +974,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1390995456');
+  background-image: url('../images/header.jpg?1392022357');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -1336,7 +1339,7 @@ h4 {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/sections/location.jpg?1390995710');
+  background-image: url('../images/sections/location.jpg?1392022357');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1444,7 +1447,7 @@ h4 {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/sections/signup.jpg?1390995498');
+  background-image: url('../images/sections/signup.jpg?1392022357');
 }
 .signup > div .text-box {
   width: 35%;
