@@ -3,8 +3,8 @@
 	
 	A foundation to build upon.
 ----------------------------------------------------------------------*/
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
-/* Modified by Johan, 2012 */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/*! Modified by Johan, 2012 */
 /* Border-box everything! It's okay! */
 * {
   -moz-box-sizing: border-box;
@@ -974,7 +974,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1392022357');
+  background-image: url('../images/header.jpg?1390995456');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -1019,11 +1019,11 @@ h4 {
   font-style: normal;
   display: block;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .28em;
+  font-size: .23em;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1em;
-  margin: 1em 0;
+  margin: 1em 0 .5em;
 }
 [role="banner"] h2 {
   font-size: 1.3em;
@@ -1339,7 +1339,7 @@ h4 {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/sections/location.jpg?1392022357');
+  background-image: url('../images/sections/location.jpg?1390995710');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1447,7 +1447,7 @@ h4 {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/sections/signup.jpg?1392022357');
+  background-image: url('../images/sections/signup.jpg?1390995498');
 }
 .signup > div .text-box {
   width: 35%;
