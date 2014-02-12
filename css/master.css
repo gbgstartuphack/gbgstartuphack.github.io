@@ -1173,6 +1173,8 @@ h4 {
     top: auto !important;
     font-weight: normal !important;
     -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+    column-count: 1 !important;
     text-align: left !important;
     max-width: 35em !important;
     font-size: 1.1em !important;
@@ -1316,6 +1318,8 @@ h4 {
   margin-left: -350px;
   top: 15em;
   -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
 .during-the-day p {
   margin: 0;
