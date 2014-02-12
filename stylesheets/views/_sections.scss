@@ -333,10 +333,17 @@
 	footer {
 		font-size: .85em;
 		font-weight: 600;
-		color: #888;
+		color: #999;
+		line-height: 1.618;
 		max-width: 30em;
 		width: 80%;
-		margin: $lineheight*2 auto 0;	
+		margin: $lineheight*2 auto 0;
+
+		h2 {
+			font-size: 1.4em;
+			font-weight: 600;
+			color: #666;
+		}	
 	}
 }
 

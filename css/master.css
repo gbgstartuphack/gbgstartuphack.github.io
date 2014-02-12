@@ -1407,10 +1407,16 @@ h4 {
 .the-sponsors footer {
   font-size: .85em;
   font-weight: 600;
-  color: #888;
+  color: #999;
+  line-height: 1.618;
   max-width: 30em;
   width: 80%;
   margin: 2.93333em auto 0;
+}
+.the-sponsors footer h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #666;
 }
 
 .signup h1 {
