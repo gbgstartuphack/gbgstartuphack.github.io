@@ -5,7 +5,7 @@ require 'sass-globbing'
 http_path = "/"
 css_dir = "build/css"
 sass_dir = "stylesheets"
-images_dir = "images"
+images_dir = "build/images"
 fonts_dir = "fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):

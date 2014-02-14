@@ -261,7 +261,7 @@
 	& > div {
 		@extend %background-section;
 		height: 50em;
-		background-image: image-url("sections/location.jpg");
+		background-image: image-url("location.jpg");
 		background-position: left top;
 	}
 
@@ -382,7 +382,7 @@
 .signup > div {
 	@extend %background-section;
 	background-position: left bottom;
-	background-image: image-url("sections/signup.jpg");	
+	background-image: image-url("signup.jpg");	
 
 	.text-box {
 		width: 35%;
