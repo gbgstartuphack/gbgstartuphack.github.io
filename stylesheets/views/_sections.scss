@@ -326,8 +326,17 @@
 .the-sponsors {
 	text-align: center;
 
+	img {
+		vertical-align: middle;
+		max-height: 100px;
+	}
+
 	.first {
 		margin-left: 33%;
+	}
+
+	& > .group {
+		margin-bottom: $lineheight;
 	}
 
 	footer {

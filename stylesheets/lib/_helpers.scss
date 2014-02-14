@@ -143,6 +143,14 @@
 	width: 25%;
 }
 
+.offset-fourth {
+	margin-left: 25%;
+
+	@include respond($medium-screen) {
+		margin-left: 0;
+	}
+}
+
 .fifth {
 	width: 20%;
 }

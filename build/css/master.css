@@ -511,6 +511,15 @@ table {
   width: 25%;
 }
 
+.offset-fourth {
+  margin-left: 25%;
+}
+@media only screen and (max-width: 50em) {
+  .offset-fourth {
+    margin-left: 0;
+  }
+}
+
 .fifth {
   width: 20%;
 }
@@ -1401,8 +1410,15 @@ h4 {
 .the-sponsors {
   text-align: center;
 }
+.the-sponsors img {
+  vertical-align: middle;
+  max-height: 100px;
+}
 .the-sponsors .first {
   margin-left: 33%;
+}
+.the-sponsors > .group {
+  margin-bottom: 1.46667em;
 }
 .the-sponsors footer {
   font-size: .85em;
