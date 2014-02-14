@@ -1,10 +1,8 @@
 var gulp = require("gulp")
-var gutil = require("gulp-util")
 var compass = require("gulp-compass")
-var path = require("path")
 var images = require('gulp-imagemin')
 
-gulp.task("default", ["sass"], function() {
+gulp.task("default", ["images", "sass"], function() {
 
 })
 
