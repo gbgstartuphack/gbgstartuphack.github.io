@@ -28,6 +28,18 @@ p {
 	margin: 0 0 $lineheight;
 }
 
+pre, code {
+	font-family: $mono;
+}
+
+code {
+	font-size: to_em(12);
+	background-color: #f9f9f9;
+	border: 1px solid #e3e3e3;
+	@include border-radius(3px);
+	padding: .1em .3em;
+}
+
 dl {
 	margin: $lineheight 0;
 	@include clearfix;

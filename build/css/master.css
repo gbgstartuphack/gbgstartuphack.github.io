@@ -691,6 +691,22 @@ p {
   margin: 0 0 1.46667em;
 }
 
+pre, code {
+  font-family: Menlo, Monaco, Courier, monospace;
+}
+
+code {
+  font-size: 0.8em;
+  background-color: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: .1em .3em;
+}
+
 dl {
   margin: 1.46667em 0;
   /* For IE 6/7 (trigger hasLayout) */
