@@ -27,7 +27,7 @@ $.fn.tabs = function(options) {
 		var $root = $(".the-event"),
 			$panes = $(options.panes),
 			$this = $(this),
-			$tabs = $root.find("a"),
+			$tabs = $root.find(".tab-switch a"),
 			$images = $root.find("img")
 
 		$panes.not(":first").add($images.last()).addClass("out")

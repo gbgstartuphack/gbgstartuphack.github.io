@@ -388,6 +388,10 @@ table {
   left: -9999em;
 }
 
+.center {
+  text-align: center;
+}
+
 .read-more {
   color: #333333;
   text-decoration: none !important;
@@ -564,7 +568,7 @@ body {
 
 /* =BUTTONS 
 -------------------------------- */
-.btn, .btn-white,
+.btn, .btn-white, .btn-facebook,
 button,
 input[type="button"],
 input[type="submit"] {
@@ -581,7 +585,7 @@ input[type="submit"] {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-.btn:hover, .btn-white:hover,
+.btn:hover, .btn-white:hover, .btn-facebook:hover,
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
@@ -589,19 +593,19 @@ input[type="submit"]:hover {
   background-color: #333333;
   color: #fff;
 }
-.btn.large, .large.btn-white,
+.btn.large, .large.btn-white, .large.btn-facebook,
 button.large,
 input[type="button"].large,
 input[type="submit"].large {
   font-size: 1.2em;
 }
-.btn.block, .block.btn-white,
+.btn.block, .block.btn-white, .block.btn-facebook,
 button.block,
 input[type="button"].block,
 input[type="submit"].block {
   width: 100%;
 }
-.btn [class^="icon-"], .btn-white [class^="icon-"],
+.btn [class^="icon-"], .btn-white [class^="icon-"], .btn-facebook [class^="icon-"],
 button [class^="icon-"],
 input[type="button"] [class^="icon-"],
 input[type="submit"] [class^="icon-"] {
@@ -633,6 +637,31 @@ input[type="submit"] [class^="icon-"] {
   }
 }
 
+.btn-facebook {
+  background: #39579a -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4a6dbc), color-stop(100%, #39579a));
+  background: #39579a -webkit-linear-gradient(#4a6dbc, #39579a);
+  background: #39579a -moz-linear-gradient(#4a6dbc, #39579a);
+  background: #39579a -o-linear-gradient(#4a6dbc, #39579a);
+  background: #39579a linear-gradient(#4a6dbc, #39579a);
+  color: #fff;
+  border: 0;
+  font-weight: 500;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border: 1px solid #385596;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
+}
+.btn-facebook [class^="icon-"] {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding-right: 10px;
+}
+.btn-facebook:active {
+  background-image: none;
+  background-color: #324c87;
+  color: #eee;
+}
+
 /*	=ELEMENT SETUP
 ----------------------------------------------------------------------*/
 img,
@@ -660,6 +689,41 @@ a:hover {
 
 p {
   margin: 0 0 1.46667em;
+}
+
+dl {
+  margin: 1.46667em 0;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+dl:before, dl:after {
+  content: "";
+  display: table;
+}
+dl:after {
+  clear: both;
+}
+dl {
+  *zoom: 1;
+}
+
+dd, dt {
+  display: inline;
+}
+
+dd {
+  margin: 0;
+  /* break */
+}
+dd::after {
+  content: "";
+  display: block;
+}
+
+dt {
+  text-align: right;
+  margin-right: 1.46667em;
+  min-width: 100px;
+  font-weight: bold;
 }
 
 /*	=HEADINGS
@@ -1037,6 +1101,7 @@ h4 {
   font-size: 1.3em;
   letter-spacing: .1em;
   margin-bottom: 1em;
+  font-weight: normal;
 }
 @media only screen and (max-width: 30em) {
   [role="banner"] h2 {
@@ -1154,8 +1219,9 @@ h4 {
 
 .the-event {
   position: relative;
-  padding-top: 67%;
+  padding-top: 50%;
   height: 0;
+  overflow: hidden;
   /* tabs */
 }
 @media only screen and (max-width: 50em) {
@@ -1212,8 +1278,6 @@ h4 {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 0;
-  padding-top: 100%;
 }
 .the-event > section .text-box {
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
@@ -1335,6 +1399,9 @@ h4 {
 .during-the-day p {
   margin: 0;
   text-indent: 1.5em;
+}
+.during-the-day p:first-child {
+  text-indent: 0;
 }
 
 .during-the-night .text-box {
@@ -1522,6 +1589,7 @@ h4 {
 .the-organisers h2, .the-advisors h2 {
   font-size: 1.2em;
   margin-bottom: 0;
+  font-weight: bold;
 }
 .the-organisers section p, .the-advisors section p {
   font-size: .85em;
