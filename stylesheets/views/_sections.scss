@@ -233,7 +233,11 @@
 
   	p {
   		margin: 0;
-      text-indent: 1.5em;
+      	text-indent: 1.5em;
+
+      	&:first-child {
+      		text-indent: 0;
+      	}
   	}
 }
 

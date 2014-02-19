@@ -1359,6 +1359,9 @@ h4 {
   margin: 0;
   text-indent: 1.5em;
 }
+.during-the-day p:first-child {
+  text-indent: 0;
+}
 
 .during-the-night .text-box {
   max-width: 600px;
