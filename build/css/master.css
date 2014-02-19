@@ -641,6 +641,7 @@ input[type="submit"] [class^="icon-"] {
   background: #39579a linear-gradient(#4a6dbc, #39579a);
   color: #fff;
   border: 0;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   border: 1px solid #385596;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;

@@ -69,6 +69,7 @@ input[type="submit"] {
 	@include background($color linear-gradient(lighten($color, 10%), $color));
 	color: #fff;
 	border: 0;
+	font-weight: 500;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	border: 1px solid darken($color, 1%);
 	@include box-shadow(rgba(#000, .3) 0 1px 4px);
