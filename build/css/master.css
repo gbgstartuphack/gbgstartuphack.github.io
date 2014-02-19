@@ -388,6 +388,10 @@ table {
   left: -9999em;
 }
 
+.center {
+  text-align: center;
+}
+
 .read-more {
   color: #333333;
   text-decoration: none !important;
