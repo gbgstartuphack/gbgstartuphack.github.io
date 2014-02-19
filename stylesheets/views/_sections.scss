@@ -19,6 +19,21 @@
 	}
 }
 
+main > section {
+	footer {
+		font-size: .85em;
+
+		&::before {
+			display: block;
+			content: "";
+			border-top: 1px solid #e2e2e2;
+			margin: $lineheight auto;
+			max-width: 10em;
+			width: 50%;
+		}
+	}
+}
+
 .text-box {
 	position: absolute;
 	line-height: 1.618;
@@ -268,6 +283,11 @@
 	margin: auto;
 	max-width: 60em;
 	text-align: center;
+
+	dl {
+		max-width: 30em;
+		margin: $lineheight auto;
+	}
 }
 
 .the-location {
