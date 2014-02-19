@@ -34,22 +34,27 @@ dl {
 }
 
 dd, dt {
-	display: inline;
+	float: left;
 }
 
 dd {
 	margin: 0;
-	
-	/* break */
-	&::after {
-		content: "";
-		display: block;
-	}
+	text-align: left;
 }
 
 dt {
+	clear: left;
 	text-align: right;
 	margin-right: $lineheight;
-	min-width: 100px;
+	min-width: 8em;
 	font-weight: bold;
+}
+
+@include respond($small-screen) {
+	dt, dd {
+		float: none;
+		min-width: 0;
+		text-align: center;
+		margin: 0 0 .5em;
+	}
 }
