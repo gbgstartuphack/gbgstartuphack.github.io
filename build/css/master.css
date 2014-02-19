@@ -1051,7 +1051,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1392826923');
+  background-image: url('../images/header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -1448,7 +1448,7 @@ main > section footer::before {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/location.jpg?1392826923');
+  background-image: url('../images/location.jpg');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1569,7 +1569,7 @@ main > section footer::before {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/signup.jpg?1392826923');
+  background-image: url('../images/signup.jpg');
 }
 .signup > div .text-box {
   width: 35%;
@@ -1666,7 +1666,8 @@ main > section footer::before {
 }
 .timeline p {
   text-align: center;
-  font-style: italic;
+  font-size: 1.1em;
+  color: #999;
 }
 .timeline .group {
   position: relative;
@@ -1704,7 +1705,7 @@ main > section footer::before {
   height: 100;
   top: 0;
   bottom: 0;
-  background: url('../images/fb.png?1392836012');
+  background: url('../images/fb.png');
   background-size: cover;
   z-index: 10;
   -webkit-transition: opacity 0.3s;
