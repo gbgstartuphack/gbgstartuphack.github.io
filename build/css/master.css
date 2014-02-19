@@ -648,13 +648,27 @@ input[type="submit"] [class^="icon-"] {
   font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   border: 1px solid #385596;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 3px, inset rgba(255, 255, 255, 0.2) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 3px, inset rgba(255, 255, 255, 0.2) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 3px, inset rgba(255, 255, 255, 0.2) 0 1px 0;
+  -webkit-transition: box-shadow 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -moz-transition: box-shadow 0.3s ease-in, -moz-transform 0.3s ease-in;
+  -o-transition: box-shadow 0.3s ease-in, -o-transform 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in, transform 0.3s ease-in;
 }
 .btn-facebook [class^="icon-"] {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   padding-right: 10px;
+}
+.btn-facebook:hover {
+  -webkit-transform: translate(0, -5px);
+  -moz-transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px);
+  -o-transform: translate(0, -5px);
+  transform: translate(0, -5px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 6px 10px, inset rgba(255, 255, 255, 0.2) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 6px 10px, inset rgba(255, 255, 255, 0.2) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 6px 10px, inset rgba(255, 255, 255, 0.2) 0 1px 0;
 }
 .btn-facebook:active {
   background-image: none;
