@@ -691,6 +691,41 @@ p {
   margin: 0 0 1.46667em;
 }
 
+dl {
+  margin: 1.46667em 0;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+dl:before, dl:after {
+  content: "";
+  display: table;
+}
+dl:after {
+  clear: both;
+}
+dl {
+  *zoom: 1;
+}
+
+dd, dt {
+  display: inline;
+}
+
+dd {
+  margin: 0;
+  /* break */
+}
+dd::after {
+  content: "";
+  display: block;
+}
+
+dt {
+  text-align: right;
+  margin-right: 1.46667em;
+  min-width: 100px;
+  font-weight: bold;
+}
+
 /*	=HEADINGS
 ----------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {

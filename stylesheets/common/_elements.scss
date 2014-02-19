@@ -27,3 +27,29 @@ a {
 p {
 	margin: 0 0 $lineheight;
 }
+
+dl {
+	margin: $lineheight 0;
+	@include clearfix;
+}
+
+dd, dt {
+	display: inline;
+}
+
+dd {
+	margin: 0;
+	
+	/* break */
+	&::after {
+		content: "";
+		display: block;
+	}
+}
+
+dt {
+	text-align: right;
+	margin-right: $lineheight;
+	min-width: 100px;
+	font-weight: bold;
+}
