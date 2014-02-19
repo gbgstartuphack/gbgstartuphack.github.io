@@ -526,6 +526,108 @@ main > section {
 	}
 }
 
+/* <fuckit> */
+.timeline {
+
+  $ball-inner-size: 75px;
+  $ball-border: $ball-inner-size * 0.125;
+  $ball-size: 2 * $ball-border + $ball-inner-size;
+
+  h2 {
+    font-size: to_em(24);
+    margin-bottom: $lineheight / 4;
+  }
+
+  p {
+    text-align: center;
+    font-style: italic;
+  }
+
+  .group {
+    position: relative;
+
+    // Fix clearfix
+    overflow: hidden;
+
+    @media only screen and (max-width: $medium-screen) {
+      &::after {
+        display: none;
+      }
+    }
+
+    // Horizontal line
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: $ball-size / 2 - 1.5 * $ball-border;
+      left: 0;
+      width: 100%;
+      height: $ball-border;
+      background: $text-color;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .column {
+      padding-top: $ball-size;
+      position: relative;
+
+      &.fb a {
+        background: white;
+        /*@include transition(border-color .25s);*/
+        &::after {
+          border-radius: 50%;
+          content: ' ';
+          position: absolute;
+          width: 100%;
+          height: 100;
+          top: 0;
+          bottom: 0;
+          background: image-url('fb.png');
+          background-size: cover;
+          z-index: 10;
+          @include transition(opacity .3s);
+          opacity: 0;
+        }
+        &:hover::after {
+          opacity: 1;
+        }
+      }
+
+      &.fb:hover {
+        a {
+          background: #4d71a7;
+          border-color: #4d71a7;
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+
+      // Ball
+      a {
+        font-size: inherit;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: $ball-inner-size;
+        height: $ball-inner-size;
+        margin-left: -($ball-inner-size / 2);
+        background: white;
+        border: $ball-border solid $text-color;
+        border-radius: 50%;
+        z-index: 2;
+        @include transition(background .3s);
+      }
+      &:hover > a {
+        background: $text-color;
+      }
+    }
+  }
+}
+/* </fuckit> */
+
 .the-advisors {
 
   /*img {*/

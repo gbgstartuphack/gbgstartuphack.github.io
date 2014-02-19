@@ -1051,7 +1051,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1392567300');
+  background-image: url('../images/header.jpg?1392826923');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -1448,7 +1448,7 @@ main > section footer::before {
 
 .the-location > div {
   height: 50em;
-  background-image: url('../images/location.jpg?1392567300');
+  background-image: url('../images/location.jpg?1392826923');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1569,7 +1569,7 @@ main > section footer::before {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/signup.jpg?1392567300');
+  background-image: url('../images/signup.jpg?1392826923');
 }
 .signup > div .text-box {
   width: 35%;
@@ -1659,6 +1659,93 @@ main > section footer::before {
   }
 }
 
+/* <fuckit> */
+.timeline h2 {
+  font-size: 1.6em;
+  margin-bottom: 0.36667em;
+}
+.timeline p {
+  text-align: center;
+  font-style: italic;
+}
+.timeline .group {
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (max-width: 50em) {
+  .timeline .group::after {
+    display: none;
+  }
+}
+.timeline .group::after {
+  content: ' ';
+  position: absolute;
+  top: 32.8125px;
+  left: 0;
+  width: 100%;
+  height: 9.375px;
+  background: #333333;
+  z-index: 1;
+  pointer-events: none;
+}
+.timeline .group .column {
+  padding-top: 93.75px;
+  position: relative;
+}
+.timeline .group .column.fb a {
+  background: white;
+  /*@include transition(border-color .25s);*/
+}
+.timeline .group .column.fb a::after {
+  border-radius: 50%;
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100;
+  top: 0;
+  bottom: 0;
+  background: url('../images/fb.png?1392836012');
+  background-size: cover;
+  z-index: 10;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.timeline .group .column.fb a:hover::after {
+  opacity: 1;
+}
+.timeline .group .column.fb:hover a {
+  background: #4d71a7;
+  border-color: #4d71a7;
+}
+.timeline .group .column.fb:hover a::after {
+  opacity: 1;
+}
+.timeline .group .column a {
+  font-size: inherit;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 75px;
+  height: 75px;
+  margin-left: -37.5px;
+  background: white;
+  border: 9.375px solid #333333;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.timeline .group .column:hover > a {
+  background: #333333;
+}
+
+/* </fuckit> */
 .the-advisors {
   /*img {*/
   /*max-width: 100px;*/
