@@ -42,15 +42,7 @@
 	}
 }
 
-/* text content with padding */
-
-.content {
-	padding: 0 5%;
-	margin-bottom: $lineheight*3;
-}
-
-.intro {
-  text-align: center;
+.white-box {
   padding: 3em 20%;
   font-size: 1.3em;
   line-height: 1.618;
@@ -63,7 +55,18 @@
   	padding-left: 5%;
   	padding-right: 5%;
   	font-size: 1.1em;
-  }
+  }	
+}
+
+/* text content with padding */
+
+.content {
+	padding: 0 5%;
+	margin-bottom: $lineheight*3;
+}
+
+.intro {
+  text-align: center;
 }
 
 
@@ -219,17 +222,19 @@
 			color: $text-color;
 		}
 	}
-  	.text-box {
+
+	.text-box {
   		color: #fff;
   		width: 700px;
   		left: 50%;
   		margin-left: -350px;
+
   		top: 15em;
 
   		-webkit-column-count: 2;
   		-moz-column-count: 2;
   		column-count: 2;
-  	}
+	}
 
   	p {
   		margin: 0;
@@ -254,6 +259,12 @@
 	}	
 
 	
+}
+
+.practical-info {
+	margin: auto;
+	max-width: 60em;
+	text-align: center;
 }
 
 .the-location {

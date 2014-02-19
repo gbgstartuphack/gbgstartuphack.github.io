@@ -677,8 +677,7 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 2.4em;
+  font-size: 1.86667em;
   margin: 0.73333em 0;
 }
 
@@ -983,7 +982,7 @@ h4 {
 
 [role="banner"] {
   padding: 2em 1em;
-  background-image: url('../images/header.jpg?1392416743');
+  background-image: url('../images/header.jpg?1392567300');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -8em;
@@ -1127,6 +1126,22 @@ h4 {
   }
 }
 
+.white-box {
+  padding: 3em 20%;
+  font-size: 1.3em;
+  line-height: 1.618;
+}
+.white-box p:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 30em) {
+  .white-box {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.1em;
+  }
+}
+
 /* text content with padding */
 .content {
   padding: 0 5%;
@@ -1135,19 +1150,6 @@ h4 {
 
 .intro {
   text-align: center;
-  padding: 3em 20%;
-  font-size: 1.3em;
-  line-height: 1.618;
-}
-.intro p:last-child {
-  margin-bottom: 0;
-}
-@media only screen and (max-width: 30em) {
-  .intro {
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 1.1em;
-  }
 }
 
 .the-event {
@@ -1350,9 +1352,15 @@ h4 {
   }
 }
 
+.practical-info {
+  margin: auto;
+  max-width: 60em;
+  text-align: center;
+}
+
 .the-location > div {
   height: 50em;
-  background-image: url('../images/location.jpg?1392416743');
+  background-image: url('../images/location.jpg?1392567300');
   background-position: left top;
 }
 .the-location .text-box {
@@ -1473,7 +1481,7 @@ h4 {
 
 .signup > div {
   background-position: left bottom;
-  background-image: url('../images/signup.jpg?1392416743');
+  background-image: url('../images/signup.jpg?1392567300');
 }
 .signup > div .text-box {
   width: 35%;
