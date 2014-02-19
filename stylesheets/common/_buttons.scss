@@ -60,3 +60,27 @@ input[type="submit"] {
 		}
 	}
 }
+
+
+.btn-facebook {
+	@extend .btn;
+
+	$color: rgb(57, 87, 154);
+	@include background($color linear-gradient(lighten($color, 10%), $color));
+	color: #fff;
+	border: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	border: 1px solid darken($color, 1%);
+	@include box-shadow(rgba(#000, .3) 0 1px 4px);
+
+	[class^="icon-"] {
+		border-right: 1px solid rgba(#fff, .3);
+		padding-right: 10px;
+	}
+
+	&:active {
+		background-image: none;
+		background-color: darken($color, 5%);
+		color: #eee;
+	}
+}
