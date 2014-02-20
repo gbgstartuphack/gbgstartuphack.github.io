@@ -20,6 +20,11 @@
 }
 
 main > section {
+	// Reset link decorations for the read-more arrow
+	.link-unstyled, .link-unstyled:hover {
+		text-decoration: none !important;
+	}
+
 	footer {
 		font-size: .85em;
 

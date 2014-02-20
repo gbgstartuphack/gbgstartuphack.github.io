@@ -1204,6 +1204,9 @@ h4 {
   }
 }
 
+main > section .link-unstyled, main > section .link-unstyled:hover {
+  text-decoration: none !important;
+}
 main > section footer {
   font-size: .85em;
 }
