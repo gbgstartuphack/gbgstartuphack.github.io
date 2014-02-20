@@ -389,7 +389,17 @@ main > section {
 	}
 
 	.antura {
-		margin-top: $lineheight;
+		margin-top: $lineheight*1.5;
+
+		img {
+			max-width: 60%;
+		}
+	}
+
+	.startupgrind {
+		img {
+			width: auto;
+		}
 	}
 
 	& > .group {

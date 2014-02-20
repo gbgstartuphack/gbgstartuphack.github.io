@@ -1557,7 +1557,13 @@ main > section footer::before {
   width: auto;
 }
 .the-sponsors .antura {
-  margin-top: 1.46667em;
+  margin-top: 2.2em;
+}
+.the-sponsors .antura img {
+  max-width: 60%;
+}
+.the-sponsors .startupgrind img {
+  width: auto;
 }
 .the-sponsors > .group {
   margin-bottom: 4.4em;
