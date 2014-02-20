@@ -211,13 +211,7 @@ main > section {
 	}
 
 	.the-party-back {
-		bottom: 0;
-		top: auto;
-
-		@include respond(1155px) {
-			bottom: auto;
-			top: 0;
-		}
+		top: 0;
 		
 		&.out {
 			@include transform(translate(0, 5%));

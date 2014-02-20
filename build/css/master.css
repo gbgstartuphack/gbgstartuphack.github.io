@@ -1405,14 +1405,7 @@ main > section footer::before {
   }
 }
 .the-event .the-party-back {
-  bottom: 0;
-  top: auto;
-}
-@media only screen and (max-width: 1155px) {
-  .the-event .the-party-back {
-    bottom: auto;
-    top: 0;
-  }
+  top: 0;
 }
 .the-event .the-party-back.out {
   -webkit-transform: translate(0, 5%);
