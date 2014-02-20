@@ -382,12 +382,18 @@ main > section {
 		}
 	}
 
+	.lurn img {
+		max-height: 50px;
+		max-width: 100%;
+		width: auto;
+	}
+
 	.antura {
 		margin-top: $lineheight;
 	}
 
 	& > .group {
-		margin-bottom: $lineheight;
+		margin-bottom: $lineheight*3;
 	}
 
 	footer {

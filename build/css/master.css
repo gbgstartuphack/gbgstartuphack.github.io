@@ -1551,11 +1551,16 @@ main > section footer::before {
   max-width: 20em;
   margin: 0 auto 1.46667em;
 }
+.the-sponsors .lurn img {
+  max-height: 50px;
+  max-width: 100%;
+  width: auto;
+}
 .the-sponsors .antura {
   margin-top: 1.46667em;
 }
 .the-sponsors > .group {
-  margin-bottom: 1.46667em;
+  margin-bottom: 4.4em;
 }
 .the-sponsors footer {
   font-size: .85em;
