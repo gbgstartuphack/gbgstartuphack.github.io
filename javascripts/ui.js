@@ -31,8 +31,6 @@ $.fn.tabs = function(options) {
 			$images = $root.find("img")
 
 		$panes.not(":first").add($images.last()).addClass("out")
-		console.log( $panes.not(":first").add($images.last()) )
-		console.log("hej")
 		$panes.not(":first").find("h1").hide()
 		$tabs.first().addClass("current")
 
