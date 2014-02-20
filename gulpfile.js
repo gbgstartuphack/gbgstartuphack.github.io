@@ -9,8 +9,9 @@ gulp.task("default", ["images", "sass"], function() {
 gulp.task("sass", function() {
 	gulp.src( ["stylesheets/*.scss"] )
 		.pipe(compass({
-			config_file: "./config.rb",
+			image: "build/images",
 			css: "build/css",
+			font: "fonts",
 			sass: "stylesheets",
 			style: "compressed"
 		}))
