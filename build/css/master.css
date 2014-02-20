@@ -1542,9 +1542,17 @@ main > section footer::before {
 .the-sponsors img {
   vertical-align: middle;
   max-height: 100px;
+  width: 12em;
 }
 .the-sponsors .first {
   margin-left: 33%;
+}
+.the-sponsors .half p {
+  max-width: 20em;
+  margin: 0 auto 1.46667em;
+}
+.the-sponsors .antura {
+  margin-top: 1.46667em;
 }
 .the-sponsors > .group {
   margin-bottom: 1.46667em;

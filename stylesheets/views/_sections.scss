@@ -368,10 +368,22 @@ main > section {
 	img {
 		vertical-align: middle;
 		max-height: 100px;
+		width: 12em;
 	}
 
 	.first {
 		margin-left: 33%;
+	}
+
+	.half {
+		p {
+			max-width: 20em;
+			margin: 0 auto $lineheight;
+		}
+	}
+
+	.antura {
+		margin-top: $lineheight;
 	}
 
 	& > .group {
