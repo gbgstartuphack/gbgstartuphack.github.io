@@ -27,10 +27,8 @@
 
 [role="banner"] {
 	padding: 2em 1em;
-	background-image: image-url('header.jpg');
+	background: #000 image-url("header.jpg") no-repeat center -8em;
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center -8em;
 	position: relative;
 	text-align: center;
 	@include animation("backgroundFloat", $duration: 1s);
