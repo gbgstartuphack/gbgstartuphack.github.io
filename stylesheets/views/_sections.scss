@@ -365,6 +365,10 @@ main > section {
 		width: 12em;
 	}
 
+	.flower img {
+		margin-bottom: $lineheight / 2;
+	}
+
 	.first {
 		margin-left: 33%;
 	}
@@ -386,7 +390,7 @@ main > section {
 		margin-top: $lineheight*1.5;
 
 		img {
-			max-width: 60%;
+			max-width: 80%;
 		}
 	}
 
