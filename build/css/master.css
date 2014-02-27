@@ -1565,6 +1565,9 @@ main > section footer::before {
 .the-sponsors .burt img {
   max-width: 6em;
 }
+.the-sponsors .swedishstartupspace img {
+  width: auto;
+}
 .the-sponsors .startupgrind img {
   width: auto;
 }
