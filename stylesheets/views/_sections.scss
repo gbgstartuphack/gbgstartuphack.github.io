@@ -75,7 +75,7 @@ main > section {
   	padding-left: 5%;
   	padding-right: 5%;
   	font-size: 1.1em;
-  }	
+  }
 }
 
 /* text content with padding */
@@ -96,7 +96,7 @@ main > section {
 	height: 0;
 	overflow: hidden;
 
-	@include respond($medium-screen) { 
+	@include respond($medium-screen) {
 		height: auto;
 		padding-top: 0;
 
@@ -152,7 +152,7 @@ main > section {
 		position: absolute;
 		top: 0;
 		width: 100%;
-		
+
 		.text-box {
 			@include transition(transform .5s, opacity .5s);
 		}
@@ -168,7 +168,7 @@ main > section {
 		}
 
 		&#the-hack.out .text-box {
-			@include transform(translate(-5%, 0));	
+			@include transform(translate(-5%, 0));
 		}
 
 		@include respond($medium-screen) {
@@ -212,7 +212,7 @@ main > section {
 
 	.the-party-back {
 		top: 0;
-		
+
 		&.out {
 			@include transform(translate(0, 5%));
 		}
@@ -227,7 +227,7 @@ main > section {
 }
 
 .during-the-day {
-	
+
 	h1 {
 		color: #fff;
 
@@ -273,9 +273,9 @@ main > section {
 		@include respond(1155px) {
 			top: $lineheight*9;
 		}
-	}	
+	}
 
-	
+
 }
 
 .practical-info {
@@ -290,7 +290,7 @@ main > section {
 }
 
 .the-location {
-	
+
 	& > div {
 		@extend %background-section;
 		height: 50em;
@@ -365,8 +365,13 @@ main > section {
 		width: 12em;
 	}
 
-	.flower img {
-		margin-bottom: $lineheight / 2;
+	.flower {
+		img {
+			margin-bottom: $lineheight / 2;
+			max-height: 70px;
+			max-width: 10em;
+			width: auto;
+		}
 	}
 
 	.first {
@@ -387,10 +392,17 @@ main > section {
 	}
 
 	.antura {
-		margin-top: $lineheight*1.5;
-
+		margin-top: 1.5em;
 		img {
 			max-width: 80%;
+		}
+	}
+
+	.burt {
+		margin-top: 1em;
+
+		img {
+			max-width: 6em;
 		}
 	}
 
@@ -417,7 +429,7 @@ main > section {
 			font-size: 1.4em;
 			font-weight: 600;
 			color: #666;
-		}	
+		}
 	}
 }
 
@@ -456,7 +468,7 @@ main > section {
 .signup > div {
 	@extend %background-section;
 	background-position: left bottom;
-	background-image: image-url("signup.jpg");	
+	background-image: image-url("signup.jpg");
 
 	.text-box {
 		width: 35%;
@@ -505,7 +517,7 @@ main > section {
 		margin-bottom: 0;
 		font-weight: bold;
 	}
-	
+
 	section {
 
 		p {

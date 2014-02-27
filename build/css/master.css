@@ -1537,6 +1537,9 @@ main > section footer::before {
 }
 .the-sponsors .flower img {
   margin-bottom: 0.73333em;
+  max-height: 70px;
+  max-width: 10em;
+  width: auto;
 }
 .the-sponsors .first {
   margin-left: 33%;
@@ -1551,10 +1554,16 @@ main > section footer::before {
   width: auto;
 }
 .the-sponsors .antura {
-  margin-top: 2.2em;
+  margin-top: 1.5em;
 }
 .the-sponsors .antura img {
   max-width: 80%;
+}
+.the-sponsors .burt {
+  margin-top: 1em;
+}
+.the-sponsors .burt img {
+  max-width: 6em;
 }
 .the-sponsors .startupgrind img {
   width: auto;
