@@ -1618,8 +1618,24 @@ main > section footer::before {
 .questions .zigzag:nth-child(even) {
   left: -200px;
 }
+@media only screen and (max-width: 50em) {
+  .questions .zigzag:nth-child(even) {
+    left: auto;
+  }
+}
 .questions .zigzag:nth-child(odd) {
   right: -200px;
+}
+@media only screen and (max-width: 50em) {
+  .questions .zigzag:nth-child(odd) {
+    right: auto;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .questions .zigzag {
+    width: 100%;
+    font-size: 1.2em;
+  }
 }
 
 .signup h1 {

@@ -468,10 +468,23 @@ main > section {
 
     &:nth-child(even) {
       left: $offset*1px;
+
+			@include respond($medium-screen) {
+				left: auto;
+			}
     }
     &:nth-child(odd) {
       right: $offset*1px;
+
+			@include respond($medium-screen) {
+				right: auto;
+			}
     }
+
+		@include respond($small-screen) {
+			width: 100%;
+			font-size: 1.2em;
+		}
   }
 }
 
