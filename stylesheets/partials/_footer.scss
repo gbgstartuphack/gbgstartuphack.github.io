@@ -11,6 +11,16 @@
 		font-weight: 300;
 	}
 
+	.more-questions {
+		border: 1px solid rgba(#fff, .1);
+		border-width: 1px 0;
+		padding: $lineheight*2 0;
+
+		h2 {
+			margin-top: 0;
+		}
+	}
+
 	.contact-email {
 		font-size: to_em(36);
 		font-weight: 600;
@@ -27,7 +37,7 @@
 
 	a {
 		color: #f6f6f6;
-	}	
+	}
 
 	.list {
 		margin: $lineheight*2 0;

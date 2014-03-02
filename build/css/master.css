@@ -923,6 +923,14 @@ h4 {
 [role="contentinfo"] h2 {
   font-weight: 300;
 }
+[role="contentinfo"] .more-questions {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-width: 1px 0;
+  padding: 2.93333em 0;
+}
+[role="contentinfo"] .more-questions h2 {
+  margin-top: 0;
+}
 [role="contentinfo"] .contact-email {
   font-size: 2.4em;
   font-weight: 600;
@@ -1592,15 +1600,26 @@ main > section footer::before {
 .questions, .questions h3, .questions p {
   text-align: left;
 }
+.questions h2 {
+  font-size: 3em;
+}
+.questions h3 {
+  font-size: 1.2em;
+}
 .questions .zigzag {
-  width: 20em;
-  margin-bottom: 2em;
+  line-height: 1.618;
+  width: 26.66667em;
+  margin: 0 auto 4.4em;
+  position: relative;
+}
+.questions .zigzag p {
+  color: #c5c5c5;
 }
 .questions .zigzag:nth-child(even) {
-  margin-left: 30%;
+  left: -200px;
 }
 .questions .zigzag:nth-child(odd) {
-  margin-left: 60%;
+  right: -200px;
 }
 
 .signup h1 {

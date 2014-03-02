@@ -444,14 +444,33 @@ main > section {
     text-align: left;
   }
 
+	h2 {
+		font-size: 3em;
+	}
+
+	h3 {
+			font-size: 1.2em;
+	}
+
   .zigzag {
-    width: to_em(300);
-    margin-bottom: to_em(30);
+		$width: 400;
+		$offset: -$width / 2;
+
+		line-height: 1.618;
+
+    width: to_em($width);
+		margin: 0 auto $lineheight*3;
+		position: relative;
+
+		p {
+			color: #c5c5c5;
+		}
+
     &:nth-child(even) {
-      margin-left: 30%;
+      left: $offset*1px;
     }
     &:nth-child(odd) {
-      margin-left: 60%;
+      right: $offset*1px;
     }
   }
 }
