@@ -439,6 +439,23 @@ main > section {
 	}
 }
 
+.questions {
+  &, & h3, & p {
+    text-align: left;
+  }
+
+  .zigzag {
+    width: to_em(300);
+    margin-bottom: to_em(30);
+    &:nth-child(even) {
+      margin-left: 30%;
+    }
+    &:nth-child(odd) {
+      margin-left: 60%;
+    }
+  }
+}
+
 .signup {
 	h1 {
 		text-align: left;

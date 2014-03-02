@@ -1589,6 +1589,20 @@ main > section footer::before {
   color: #666;
 }
 
+.questions, .questions h3, .questions p {
+  text-align: left;
+}
+.questions .zigzag {
+  width: 20em;
+  margin-bottom: 2em;
+}
+.questions .zigzag:nth-child(even) {
+  margin-left: 30%;
+}
+.questions .zigzag:nth-child(odd) {
+  margin-left: 60%;
+}
+
 .signup h1 {
   text-align: left;
   margin: 0 0 0.5em;
