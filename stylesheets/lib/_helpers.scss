@@ -6,9 +6,9 @@
 }
 
 .clear {
-	clear: both; 
-	display: block; 
-	height: 1px; 
+	clear: both;
+	display: block;
+	height: 1px;
 	margin: -1px 0 0 0;
 }
 
@@ -19,6 +19,14 @@
 
 .center {
 	text-align: center;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.column.centered {
+	float: none;
 }
 
 .read-more {
@@ -141,6 +149,10 @@
 
 .third {
 	width: 33%;
+}
+
+.offset-third {
+	margin-left: 33%;
 }
 
 .fourth {
