@@ -372,6 +372,36 @@ main > section {
 			max-width: 10em;
 			width: auto;
 		}
+
+		& > section {
+			position: relative;
+
+			@include respond($medium-screen) {
+				position: static;
+			}
+		}
+
+		section:nth-child(odd) {
+			right: -5%;
+		}
+		section:nth-child(even) {
+			left: -5%;
+		}
+	}
+
+	.seed {
+		&.group {
+				margin-bottom: 0;
+		}
+
+		@include respond($medium-screen) {
+			section {
+				margin-bottom: $lineheight*2;
+			}
+			img {
+				width: 50%;
+			}
+		}
 	}
 
 	.first {
