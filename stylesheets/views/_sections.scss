@@ -361,8 +361,12 @@ main > section {
 
 	img {
 		vertical-align: middle;
+		width: 90%;
 		max-height: 100px;
-		width: 140px;
+
+		&.square {
+			width: auto;
+		}
 	}
 
 	.flower {
@@ -436,17 +440,6 @@ main > section {
 		}
 	}
 
-	.swedishstartupspace {
-		img {
-			width: auto;
-		}
-	}
-
-	.startupgrind {
-		img {
-			width: auto;
-		}
-	}
 
 	& > .group {
 		margin-bottom: $lineheight*3;
