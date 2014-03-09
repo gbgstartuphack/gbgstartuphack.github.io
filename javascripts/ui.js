@@ -20,7 +20,7 @@ $.fn.tabs = function(options) {
 	}
 
 	function switchHeadings($parent, target) {
-		$parent.find("h1").hide().end().filter(target).find("h1").show()
+		$parent.find("h1").addClass('event-hidden').end().filter(target).find("h1").removeClass('event-hidden')
 	}
 
 	return this.each(function() {
@@ -31,7 +31,7 @@ $.fn.tabs = function(options) {
 			$images = $root.find("img")
 
 		$panes.not(":first").add($images.last()).addClass("out")
-		$panes.not(":first").find("h1").hide()
+		$panes.not(":first").find("h1").addClass('event-hidden')
 		$tabs.first().addClass("current")
 
 		$tabs.on("click", function(evt) {
@@ -65,6 +65,14 @@ $(function() {
 		if(window.matchMedia("(min-width: 50em)").matches){
 			setUpTabs()
 		}
+
+		var tabsSetup = false
+		$(window).on('resize', function () {
+			if (window.matchMedia("min-width: 50em)") && !tabsSetup) {
+				setUpTabs()
+				tabsSetup = true
+			}
+		})
 	}
 	else {
 		setUpTabs()

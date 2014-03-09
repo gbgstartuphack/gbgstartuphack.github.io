@@ -95,6 +95,7 @@ main > section {
 	padding-top: 50%;
 	height: 0;
 	overflow: hidden;
+	min-height: to_em(540);
 
 	@include respond($medium-screen) {
 		height: auto;
@@ -106,6 +107,12 @@ main > section {
 			font-size: to_em(24);
 			text-align: left;
 			padding-left: 10%;
+		}
+	}
+
+	.event-hidden {
+		@include respond($medium-screen, min) {
+			display: none;
 		}
 	}
 
@@ -220,6 +227,14 @@ main > section {
 
 	.the-party-back {
 		top: 0;
+		// Prevent text from being displayed on the black part of the image
+		@include respond(to_em(900)) {
+			max-width: none;
+			width: to_em(1000);
+			left: 50%;
+			margin-left: -500px;
+
+		}
 
 		&.out {
 			@include transform(translate(0, 5%));
