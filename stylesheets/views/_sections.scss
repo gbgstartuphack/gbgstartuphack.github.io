@@ -95,7 +95,7 @@ main > section {
 	padding-top: 50%;
 	height: 0;
 	overflow: hidden;
-	min-height: to_em(540);
+	min-height: to_em(580);
 
 	@include respond($medium-screen) {
 		height: auto;
@@ -111,7 +111,7 @@ main > section {
 	}
 
 	.event-hidden {
-		@include respond($medium-screen, min) {
+		@include respond($small-screen, min) {
 			display: none;
 		}
 	}
@@ -223,6 +223,11 @@ main > section {
 		@include respond($medium-screen) {
 			display: none;
 		}
+	}
+
+	.the-hack-back {
+		min-height: 580px;
+		min-width: 900px;
 	}
 
 	.the-party-back {
