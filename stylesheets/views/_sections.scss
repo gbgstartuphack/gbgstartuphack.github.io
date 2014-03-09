@@ -455,7 +455,7 @@ main > section {
 				margin-bottom: $lineheight*2;
 			}
 			img {
-				width: 50%;
+				max-width: 30%;
 			}
 		}
 	}
@@ -481,6 +481,10 @@ main > section {
 		margin-top: 1.5em;
 		img {
 			max-width: 60%;
+
+			@include respond($medium-screen) {
+				max-width: 40%;
+			}
 		}
 	}
 
@@ -489,6 +493,12 @@ main > section {
 
 		img {
 			max-width: 6em;
+		}
+	}
+
+	.yeos {
+		img {
+			max-width: 30%;
 		}
 	}
 
