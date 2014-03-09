@@ -251,11 +251,11 @@ main > section {
 
   	p {
   		margin: 0;
-      	text-indent: 1.5em;
+      margin-bottom: $lineheight;
 
-      	&:first-child {
-      		text-indent: 0;
-      	}
+      &:first-child {
+        text-indent: 0;
+      }
   	}
 }
 
