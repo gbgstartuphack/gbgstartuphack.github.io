@@ -12,6 +12,15 @@ body {
 	color: $text-color;
 }
 
+::selection {
+	background: #40351D; /* Safari */
+	color: #fff;
+}
+::-moz-selection {
+	background: #40351D; /* Firefox */
+	color: #fff;
+}
+
 // ELEMENTS
 // Include stuff like headings, links, buttons, forms, element styling ..
 
@@ -32,4 +41,3 @@ body {
 
 @import "viewports/medium";
 @import "viewports/small";
-
