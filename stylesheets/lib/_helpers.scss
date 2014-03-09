@@ -179,6 +179,14 @@
 	}
 }
 
+.offset-two-fifth {
+  margin-left: 40%;
+
+	@include respond($medium-screen) {
+    margin-left: 0;
+	}
+}
+
 
 
 .list {
