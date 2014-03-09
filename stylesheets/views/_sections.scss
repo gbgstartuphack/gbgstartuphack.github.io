@@ -157,6 +157,14 @@ main > section {
 			@include transition(transform .5s, opacity .5s);
 		}
 
+    &.out {
+      pointer-events: none;
+    }
+
+    a {
+      color: white;
+    }
+
 		&.out .text-box {
 			opacity: 0;
 			@include transform(translate(5%, 0));
