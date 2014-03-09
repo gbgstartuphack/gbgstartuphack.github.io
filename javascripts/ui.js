@@ -30,6 +30,8 @@ $.fn.tabs = function(options) {
 			$tabs = $root.find("a"),
 			$images = $root.find("img")
 
+		$this.data("tabs", true)
+
 		$panes.not(":first").add($images.last()).addClass("out")
 		$panes.not(":first").find("h1").addClass('event-hidden')
 		$tabs.first().addClass("current")
@@ -55,24 +57,23 @@ $.fn.tabs = function(options) {
 }
 
 function setUpTabs() {
-	$(".tab-switch").tabs({panes: ".the-event > section"})
+	var $el = $(".tab-switch")
+
+	if($el.data("tabs")) return;
+	$el.tabs({panes: ".the-event > section"})
 }
 
 $(function() {
 
 	// set up tabs
 	if(window.matchMedia) {
-		if(window.matchMedia("(min-width: 50em)").matches){
+		var check = window.matchMedia("(min-width: 50em)")
+
+		check.addListener(setUpTabs)
+
+		if(check.matches){
 			setUpTabs()
 		}
-
-		var tabsSetup = false
-		$(window).on('resize', function () {
-			if (window.matchMedia("min-width: 50em)") && !tabsSetup) {
-				setUpTabs()
-				tabsSetup = true
-			}
-		})
 	}
 	else {
 		setUpTabs()
@@ -96,7 +97,7 @@ $(function() {
 	})
 })
 
-/* 
+/*
  * Vault button, epic as fuck
  */
 $('#vault-button').click(function(e) {
