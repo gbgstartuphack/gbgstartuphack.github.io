@@ -463,7 +463,10 @@ main > section {
 }
 
 .questions {
-  &, & h3, & p {
+  &,
+	h3,
+	h4,
+	p {
     text-align: left;
   }
 
