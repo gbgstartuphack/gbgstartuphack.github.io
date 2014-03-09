@@ -500,7 +500,10 @@ main > section {
 
 	.yeos {
 		img {
-			max-width: 30%;
+
+			@include respond($small-screen) {
+				max-width: 30%;	
+			}
 		}
 	}
 
