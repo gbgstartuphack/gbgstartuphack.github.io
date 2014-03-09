@@ -27,7 +27,7 @@ $.fn.tabs = function(options) {
 		var $root = $(".the-event"),
 			$panes = $(options.panes),
 			$this = $(this),
-			$tabs = $root.find(".tab-switch a"),
+			$tabs = $root.find("a"),
 			$images = $root.find("img")
 
 		$panes.not(":first").add($images.last()).addClass("out")
@@ -44,7 +44,10 @@ $.fn.tabs = function(options) {
 			/* use dark mode */
 			$this.toggleClass("dark", target === "#the-party")
 
-			$tabs.removeClass("current").filter(this).addClass("current")
+      var theThingWeClickedOn = this;
+			$tabs.removeClass("current").filter(function() {
+        return this.href === theThingWeClickedOn.href;
+      }).addClass("current")
 		})
 
 
