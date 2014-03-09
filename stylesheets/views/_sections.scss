@@ -172,7 +172,9 @@ main > section {
     }
 
     a {
-      color: white;
+      @include respond($medium-screen, min) {
+      	color: white;
+      }
     }
 
 		&.out .text-box {
