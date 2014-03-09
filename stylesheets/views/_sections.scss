@@ -356,14 +356,14 @@ main > section {
 		width: 30%;
 		color: #fff;
 		right: 5%;
-		top: $lineheight*5;
+		top: $lineheight*3;
 	}
 
 	@include respond(1024px) {
 		.text-box {
 			position: relative;
 			right: auto;
-			top: 60%;
+			top: 50%;
 			padding-left: 10%;
 			width: 100%;
 			overflow: hidden;
@@ -375,6 +375,11 @@ main > section {
 			width: 50%;
 			clear: left;
 			padding-right: 5%;
+		}
+
+		.location-address {
+			float: right;
+			clear: right;
 		}
 
 		/* use absolute positioning since the bloody gallery
@@ -502,7 +507,7 @@ main > section {
 		img {
 
 			@include respond($small-screen) {
-				max-width: 30%;	
+				max-width: 30%;
 			}
 		}
 	}
