@@ -161,10 +161,6 @@
 
 .offset-fourth {
 	margin-left: 25%;
-
-	@include respond($medium-screen) {
-		margin-left: 0;
-	}
 }
 
 .fifth {
@@ -173,20 +169,19 @@
 
 .offset-fifth {
   margin-left: 20%;
-
-	@include respond($medium-screen) {
-    margin-left: 0;
-	}
 }
 
 .offset-two-fifth {
   margin-left: 40%;
-
-	@include respond($medium-screen) {
-    margin-left: 0;
-	}
 }
 
+@include respond($medium-screen) {
+	@each $width in half, third, fourth, fifth {
+		.offset-#{$width} {
+			margin-left: 0;
+		}
+	}
+}
 
 
 .list {

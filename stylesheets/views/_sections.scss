@@ -456,9 +456,15 @@ main > section {
 	}
 
 	.seed {
+
 		&.group {
-				margin-bottom: 0;
+				margin-bottom: $lineheight;
+
+				&:last-of-type {
+					margin-bottom: $lineheight*2;
+				}
 		}
+
 
 		@include respond($medium-screen) {
 			section {
@@ -508,8 +514,7 @@ main > section {
 
 	.yeos {
 		img {
-
-			@include respond($small-screen) {
+			@include respond($medium-screen) {
 				max-width: 30%;
 			}
 		}
