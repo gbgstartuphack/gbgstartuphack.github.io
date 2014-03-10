@@ -502,7 +502,7 @@ main > section {
 			max-width: 60%;
 
 			@include respond($medium-screen) {
-				max-width: 40%;
+				max-width: 10em;
 			}
 		}
 	}
