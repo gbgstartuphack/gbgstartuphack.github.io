@@ -235,7 +235,10 @@ main > section {
 
 	.the-hack-back {
 		min-height: 580px;
-		min-width: 900px;
+
+		@include respond(to_em(900)) {
+			min-width: 900px;
+		}
 	}
 
 	.the-party-back {
