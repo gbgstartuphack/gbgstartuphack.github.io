@@ -337,8 +337,10 @@ main > section {
 
   .icon-facebook {
     background: #39579a;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 3px 3px 3px 5px;
+		font-size: .7em;
+		
     &::before {
       color: white;
     }
