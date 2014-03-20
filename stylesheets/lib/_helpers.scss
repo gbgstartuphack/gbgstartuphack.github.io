@@ -176,7 +176,7 @@
 }
 
 @include respond($medium-screen) {
-	@each $width in half, third, fourth, fifth {
+	@each $width in half, third, fourth, fifth, two-fifth {
 		.offset-#{$width} {
 			margin-left: 0;
 		}
