@@ -340,7 +340,8 @@ main > section {
     border-radius: 2px;
     padding: 3px 3px 3px 5px;
 		font-size: .7em;
-		
+
+
     &::before {
       color: white;
     }
@@ -496,6 +497,13 @@ main > section {
 		max-height: 50px;
 		max-width: 100%;
 		width: auto;
+	}
+
+	.glesys {
+		img {
+			max-height: 160px;
+			margin-top: -2em;
+		}
 	}
 
 	.antura {
