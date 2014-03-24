@@ -482,6 +482,14 @@ main > section {
 		}
 	}
 
+	.prize-sponsors {
+		img {
+			max-height: 90px;
+			max-width: 10em;
+			width: auto;
+		}
+	}
+
 	.first {
 		margin-left: 33%;
 	}
