@@ -167,6 +167,10 @@
 	width: 20%;
 }
 
+.sixth {
+	width: 16.6%;
+}
+
 .offset-fifth {
   margin-left: 20%;
 }
@@ -175,8 +179,12 @@
   margin-left: 40%;
 }
 
+.offset-sixth {
+	margin-left: 16.6%;
+}
+
 @include respond($medium-screen) {
-	@each $width in half, third, fourth, fifth, two-fifth {
+	@each $width in half, third, fourth, fifth, two-fifth, sixth {
 		.offset-#{$width} {
 			margin-left: 0;
 		}

@@ -435,6 +435,11 @@ main > section {
 		&.square {
 			width: auto;
 		}
+
+		@include respond($medium-screen) {
+			width: auto;
+			max-width: 40%;
+		}
 	}
 
 	.flower {
