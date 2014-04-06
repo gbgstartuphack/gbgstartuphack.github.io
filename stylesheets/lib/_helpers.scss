@@ -136,7 +136,8 @@
 /* GRID */
 
 .column {
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	padding-left: 2%;
 	padding-right: 2%;
 	min-height: 1px;
@@ -144,7 +145,7 @@
 }
 
 .half {
-	width: 50%;
+	width: 48%;
 }
 
 .third {

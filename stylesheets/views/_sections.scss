@@ -457,13 +457,6 @@ main > section {
 				position: static;
 			}
 		}
-
-		section:nth-child(odd) {
-			right: -5%;
-		}
-		section:nth-child(even) {
-			left: -5%;
-		}
 	}
 
 	.seed {
