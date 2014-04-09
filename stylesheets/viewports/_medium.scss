@@ -10,11 +10,12 @@
 		&.first {
 			margin-left: 0 !important;
 		}
-	}	
+	}
 
 
 	[role="banner"] {
-		.btn-white {
+		.btn-white,
+		.btn-black {
 			border-color: #fff;
 			color: #fff;
 

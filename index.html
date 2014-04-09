@@ -25,22 +25,37 @@
 <body itemscope itemtype="http://schema.org/Event">
 
   <header role="banner" class="header">
-    <h1 itemprop="name">
+    <h1 class="reveal" itemprop="name">
       <em>Gothenburg</em> Startup Hack
     </h1>
 
-    <p class="tagline">
+    <p class="reveal watch-video">
+      <button class="btn-black large" id="watch-video">Watch our video</button>
+    </p>
+
+    <p class="reveal tagline">
     Bring your idea to our <a class="smooth light-on-dark" href="#the-location">Vault</a> and realize it. You will meet the startup community, learn, create and have fun!
     </p>
 
-    <h2><span itemprop="startDate" content="2014-05-03T08:00">May 3 2014</span> at
+    <h2 class="reveal"><span itemprop="startDate" content="2014-05-03T08:00">May 3 2014</span> at
     <a class="smooth light-on-dark" href="#the-location" itemprop="location">Chalmerska Huset</a></h2>
 
-    <p class="read-more-container">
+    <p class="reveal read-more-container">
       <a href="#signup" class="btn-white large smooth"><i class="icon-paperplane"></i> Sign up now</a>
     </p>
 
     <a href="#" id="vault-button">♥</a>
+
+    <div id="meetup-video" class="fade">
+      <a class="close" title="Close video">✕</a>
+      <iframe src="//player.vimeo.com/video/91508376?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179&amp;api=1"
+        id="meetup-video-player"
+        width="500"
+        height="281"
+        frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen>
+    </iframe>
+    </div>
   </header>
 
   <main>
@@ -806,7 +821,7 @@ Choose and assign IP addresses directly from our ready-to-use IP address pools.
   </footer>
 
   <!-- Modal -->
-  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal reveal" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-body">
@@ -820,6 +835,7 @@ Choose and assign IP addresses directly from our ready-to-use IP address pools.
 
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+  <script src="javascripts/vendor/vimeo.froogaloops.js"></script>
   <script src="javascripts/vendor/magnific-popup.js"></script>
   <script src="javascripts/vendor/jquery.smooth-scroll.min.js"></script>
   <script src="javascripts/ui.js"></script>

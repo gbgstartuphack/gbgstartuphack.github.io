@@ -63,7 +63,31 @@ function setUpTabs() {
 	$el.tabs({panes: ".the-event > section"})
 }
 
+function hideVideo() {
+	$("#meetup-video").removeClass("in").hide();
+	$("[role='banner'] .reveal").removeClass("out");
+	player.api('unload');
+}
+
 $(function() {
+
+	var video = $("#meetup-video-player")[0]
+			player = $f(video);
+
+	player.addEvent('ready', function() {
+    player.addEvent('finish', hideVideo);
+});
+
+	$("#watch-video").on("click", function() {
+		$("#meetup-video").addClass("in").show();
+		$("[role='banner'] .reveal").addClass("out");
+		player.api('play');
+	});
+
+	$("#meetup-video .close").on("click", function(evt) {
+		evt.preventDefault();
+		hideVideo();
+	});
 
 	// set up tabs
 	if(window.matchMedia) {
