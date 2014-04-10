@@ -76,7 +76,11 @@ $(function() {
 
 	player.addEvent('ready', function() {
     player.addEvent('finish', hideVideo);
-});
+	});
+
+	$(document).on("keyup", function(evt) {
+		if(evt.keyCode === 27) hideVideo();
+	})
 
 	$("#watch-video").on("click", function() {
 		$("#meetup-video").addClass("in").show();
