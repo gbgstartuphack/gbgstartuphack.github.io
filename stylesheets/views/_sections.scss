@@ -453,6 +453,10 @@ main > section {
 		& > section {
 			position: relative;
 
+			p:last-child a {
+				font-weight: bold;
+			}
+
 			@include respond($medium-screen) {
 				position: static;
 			}
