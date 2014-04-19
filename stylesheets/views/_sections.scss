@@ -698,6 +698,20 @@ main > section {
     iframe {
       height: 20px;
     }
+
+    .cedriks-follow-button {
+      width: 127px;
+      height: 20px;
+      display: inline-block;
+      background: image-url('cedriks-knapp.png');
+      &::after { /* noo noo, senhor sprite sheet no es home, noooo */
+        display: none;
+        background: image-url('cedriks-knapp-hover.png');
+      }
+      &:hover {
+        background: image-url('cedriks-knapp-hover.png');
+      }
+    }
   }
 
 	h2 {
