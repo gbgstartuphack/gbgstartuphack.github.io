@@ -705,7 +705,9 @@ main > section {
       display: inline-block;
       background: image-url('cedriks-knapp.png');
       &::after { /* noo noo, senhor sprite sheet no es home, noooo */
-        display: none;
+        display: block;
+        width: 0;
+        height: 0;
         background: image-url('cedriks-knapp-hover.png');
       }
       &:hover {
