@@ -11,7 +11,7 @@
 		font-weight: 300;
 	}
 
-	.more-questions {
+	.more-questions, .press {
 		border: 1px solid rgba(#fff, .1);
 		border-width: 1px 0;
 		padding: $lineheight*2 0;
@@ -20,6 +20,13 @@
 			margin-top: 0;
 		}
 	}
+
+  .press {
+    h2 {
+      font-size: 3em;
+    }
+    margin-bottom: $lineheight;
+  }
 
 	.contact-email {
 		font-size: to_em(36);
