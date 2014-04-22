@@ -90,13 +90,13 @@ input[type="submit"] {
 
 	$color: rgb(57, 87, 154);
 	@include background($color linear-gradient(lighten($color, 10%), $color));
-	color: #fff;
+	color: #eee;
 	border: 0;
 	font-weight: 500;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	border: 1px solid darken($color, 1%);
 	@include box-shadow(rgba(#000, .5) 0 3px 3px, inset rgba(#fff, .2) 0 1px 0);
-	@include transition(box-shadow .3s ease-in, transform .3s ease-in);
+	@include transition(all .2s ease-in-out);
 
 	[class^="icon-"] {
 		border-right: 1px solid rgba(#fff, .3);
@@ -104,8 +104,8 @@ input[type="submit"] {
 	}
 
 	&:hover {
-		@include transform(translate(0, -5px));
-		@include box-shadow(rgba(#000, .5) 0 6px 10px, inset rgba(#fff, .2) 0 1px 0);
+		color: #fff;
+		text-shadow: rgba(#fff, .3) 0 0 3px;
 	}
 
 	&:active {
