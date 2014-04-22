@@ -17,6 +17,18 @@
 	left: -9999em;
 }
 
+.bubble {
+	display: inline-block;
+	font-style: normal;
+	font-weight: 600;
+	text-align: center;
+	@include border-radius(2px);
+	padding: 1px .5em;
+	background-color: red;
+	color: #fff;
+	font-size: .9em;
+}
+
 .center {
 	text-align: center;
 }
@@ -102,7 +114,7 @@
 			}
 		}
 
-		li:first-child a {
+		li:not(:last-child) a {
 			border-right-color: #000;
 		}
 	}
@@ -127,7 +139,7 @@
 	li {
 		display: table-cell;
 
-		&:first-child a {
+		&:not(:last-child) a {
 			border-right: 1px solid #fff;
 		}
 	}
