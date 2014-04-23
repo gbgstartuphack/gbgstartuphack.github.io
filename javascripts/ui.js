@@ -27,16 +27,17 @@ $.fn.tabs = function(options) {
 		var $root = $(".the-event"),
 			$panes = $(options.panes),
 			$this = $(this),
-			$tabs = $root.find("a"),
+			$tabs = $this.find("a"),
+			$links = $root.find("a[href^='#']"),
 			$images = $root.find("img")
 
 		$this.data("tabs", true)
 
-		$panes.not(":first").add($images.last()).addClass("out")
+		$panes.not(":first").add($images.not(":first")).addClass("out")
 		$panes.not(":first").find("h1").addClass('event-hidden')
 		$tabs.first().addClass("current")
 
-		$tabs.on("click", function(evt) {
+		$tabs.add($links).on("click", function(evt) {
 			evt.preventDefault()
 			var target = this.hash
 			applyClasses($panes, target)
