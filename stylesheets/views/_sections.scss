@@ -360,6 +360,9 @@ main > section {
 		top: 15em;
 	}
 
+	[class^="btn"]:last-child {
+		margin-left: .5em;
+	}
 }
 
 .practical-info {
