@@ -180,7 +180,7 @@ main > section {
       pointer-events: none;
     }
 
-    a {
+    a:not([class^="btn"]) {
       @include respond($medium-screen, min) {
       	color: white;
       }

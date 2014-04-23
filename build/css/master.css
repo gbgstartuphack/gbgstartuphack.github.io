@@ -1574,7 +1574,7 @@ main > section footer::before {
   pointer-events: none;
 }
 @media only screen and (min-width: 50em) {
-  .the-event > section a {
+  .the-event > section a:not([class^="btn"]) {
     color: white;
   }
 }
