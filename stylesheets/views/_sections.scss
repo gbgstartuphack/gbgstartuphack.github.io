@@ -352,12 +352,15 @@ main > section {
 	}
 
 	.text-box {
-		width: 700px;
+		width: 740px;
 		left: 50%;
-		margin-left: -350px;
+		margin-left: -370px;
 		font-weight: 600;
+		top: 13em;
+	}
 
-		top: 15em;
+	.text-columns {
+		margin-bottom: $lineheight;
 	}
 
 	[class^="btn"]:last-child {
