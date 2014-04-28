@@ -337,6 +337,10 @@ main > section {
 		font-weight: 600;
 		font-size: 1.2em;
 
+		a:not(.btn-facebook) {
+			color: #000;
+		}
+
 		@include respond(1155px) {
 			top: $lineheight*9;
 		}
