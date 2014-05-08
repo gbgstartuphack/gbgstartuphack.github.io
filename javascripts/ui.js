@@ -58,7 +58,7 @@ $.fn.tabs = function(options) {
 }
 
 function setUpTabs() {
-	var $el = $(".tab-switch")
+	var $el = $(".the-event .tab-switch")
 
 	if($el.data("tabs")) return;
 	$el.tabs({panes: ".the-event > section"})
@@ -83,7 +83,8 @@ $(function() {
 		if(evt.keyCode === 27) hideVideo();
 	})
 
-	$("#watch-video").on("click", function() {
+	$("#watch-video").on("click", function(evt) {
+		evt.preventDefault();
 		$("#meetup-video").addClass("in").show();
 		$("[role='banner'] .reveal").addClass("out");
 		player.api('play');

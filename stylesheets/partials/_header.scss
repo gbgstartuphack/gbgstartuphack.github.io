@@ -109,26 +109,25 @@
 	  top: 0;
 	  width: 100%;
 	  height: 100%;
-	  @include background(linear-gradient(transparent 40%, rgba(#000, .6) 80%));
+	  @include background(linear-gradient(transparent 20%, rgba(#000, .8) 80%));
 	  z-index: 0;
 	}
 
 	.tagline {
 		width: 50%;
-		margin: 0 auto $lineheight;
-		font-size: 1.2em;
+		margin: 0 auto $lineheight / 2;
+		font-size: 2.5em;
+		text-shadow: rgba(#000, .8) 0 0 3px;
 
 		@include respond($small-screen) {
 			width: 95%;
 		}
 	}
 
-	.watch-video {
-		margin-top: -$lineheight;
-	}
-
 	.read-more-container {
-		margin: $lineheight*2 0 0;
+		margin: 0 auto $lineheight / 2;
+		font-size: 1.1em;
+		text-transform: none;
 	}
 
 	.reveal {
