@@ -1,10 +1,10 @@
-# Landing page for Gothenburg Startup Hack 2014
+# Landing page for Gothenburg Startup Hack 2015
 
 ## How to hack on the site
 
 Install Sass and Compass:
 
-	$ gem install sass compass
+	$ gem install sass compass sass-globbing
 
 Kickoff Compass to watch changes:
 
