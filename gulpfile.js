@@ -18,7 +18,7 @@ gulp.task("sass", function() {
 })
 
 gulp.task("images", function(){
-	gulp.src(["images/sections/*.jpg", "images/location/*.jpg", "images/*.png"])
+	gulp.src(["images/sections/*.jpg", "images/location/*.jpg", "images/*.png", "images/*.jpg"])
 		.pipe(images({
 			progressive: true
 		}))
