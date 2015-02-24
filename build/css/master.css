@@ -2305,6 +2305,14 @@ main > section footer::before {
   width: auto;
 }
 
+/* =Sponsorship part
+-----------------------------*/
+.sponsorship-video {
+  border: 0 transparent; 
+  width: 100%; 
+  height: 500px;
+}
+
 /*	=MEDIUM SIZED SCREENS
 ----------------------------------------------------------------------*/
 @media only screen and (max-width: 50em) {
@@ -2330,6 +2338,10 @@ main > section footer::before {
   [role="contentinfo"] {
     font-size: .8em;
   }
+
+  .sponsorship-video {
+    height: 250px;
+  }
 }
 /*	=SMALL SCREEN STYLES
 ----------------------------------------------------------------------*/
@@ -2344,5 +2356,9 @@ main > section footer::before {
 
   [role="contentinfo"] {
     font-size: .7em;
+  }
+
+  .sponsorship-video {
+    height: 100px;
   }
 }
