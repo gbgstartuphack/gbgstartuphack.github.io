@@ -2319,6 +2319,10 @@ main > section footer::before {
   top: 0;
 }
 
+blockquote {
+  font-size: 1.2em;
+}
+
 /*	=MEDIUM SIZED SCREENS
 ----------------------------------------------------------------------*/
 @media only screen and (max-width: 50em) {
@@ -2355,8 +2359,20 @@ main > section footer::before {
   h1 {
     font-size: 2.66667em;
   }
+  
+  .a-hackathon, .why-sponsor {
+    width: auto;
+  }
+
+  .finish div h2 span {
+    font-size: 1.6em;
+  }
 
   [role="contentinfo"] {
     font-size: .7em;
+  }
+
+  blockquote {
+    font-size: 1em;
   }
 }
