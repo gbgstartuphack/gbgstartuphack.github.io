@@ -68,6 +68,10 @@ dt {
 	font-weight: bold;
 }
 
+blockquote {
+  font-size: 1em;
+}
+
 @include respond($small-screen) {
 	dt, dd {
 		float: none;
