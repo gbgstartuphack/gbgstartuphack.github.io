@@ -125,6 +125,15 @@ $(function() {
 	$(".smooth").smoothScroll({
 		speed: 1000
 	})
+    
+    
+    //countdown
+    var millisToHack = countdown(1425650400000, function(ts) {
+      //console.log(ts);
+      $("#countdown").text(ts.milliseconds);
+    },
+    countdown.MILLISECONDS);
+                          
 })
 
 /*
